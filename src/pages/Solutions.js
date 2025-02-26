@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect, createContext, useContext } from 'react';
+import React, { useState, useRef, useEffect, createContext, useContext, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import './Solutions.css';
 
@@ -13,17 +13,17 @@ const Card = ({ item, index }) => {
   const cardRef = useRef(null);
   const { onCardClose } = useContext(CarouselContext);
 
-  const handleClose = () => {
+  const handleClose = useCallback(() => {
     setIsOpen(false);
     onCardClose(index);
-  };
+  }, [setIsOpen, onCardClose, index]);
 
-  const handleOverlayClick = (e) => {
+  const handleOverlayClick = useCallback((e) => {
     // Only close if clicking the overlay itself, not its children
     if (e.target.classList.contains('expanded-overlay')) {
       handleClose();
     }
-  };
+  }, [handleClose]);
 
   useEffect(() => {
     const handleEscape = (e) => {
@@ -39,7 +39,7 @@ const Card = ({ item, index }) => {
       document.removeEventListener('keydown', handleEscape);
       document.body.style.overflow = 'auto';
     };
-  }, [isOpen]);
+  }, [isOpen, handleClose]);
 
   return (
     <>
@@ -1875,29 +1875,467 @@ const Solutions = () => {
       ]
     },
     {
-      category: "VIDEO COLLABORATION",
-      title: "Video Collaboration Solutions",
-      description: "Unified communication systems",
-      image: "https://picsum.photos/800/610",
+      category: "TRAINING",
+      title: "AV Integrated Training Rooms",
+      description: "Make training sessions more effective, accessible, and affordable with advanced technology-enabled training rooms from Symmetric IT Services. Training is essential for every organization, and achieving Learning and Development goals requires modern AV technology.",
+      image: "./images/Solutions/AV and Automation Solution/Video Collaboration/AV Integrated Training Room.png",
+      details: [
+        {
+          title: "Key Benefits",
+          type: "list",
+          items: [
+            "Comprehensive AV design for smart, efficient training environments",
+            "Video conferencing to enable remote learning and collaboration",
+            "Streaming of educational materials like lectures, videos, and podcasts",
+            "Laboratories to support advanced learning, research, and data analysis",
+            "Dynamic, easy-to-use training spaces for greater engagement"
+          ]
+        },
+        {
+          title: "Technical Features",
+          type: "list",
+          items: [
+            "High-quality visuals with intelligent audio for clearer presentations",
+            "Interactive and centrally operated sessions for maximum convenience",
+            "Seamless remote connectivity for effective team collaboration",
+            "Integrated audio, video, lighting, and control systems",
+            "Scalable solutions to fit any educational or corporate training program"
+          ]
+        },
+        {
+          title: "Smart Classroom Solutions",
+          type: "list",
+          items: [
+            "Flexible and scalable infrastructure for any training program",
+            "Interactive whiteboards and collaboration technology",
+            "Advanced scheduling and room management tools",
+            "Integrated control systems for easy operation",
+            "Future-ready technology for evolving training needs"
+          ]
+        }
+      ]
+    },
+    {
+      category: "CONFERENCE",
+      title: "Boardroom / Conference Rooms",
+      description: "Boardrooms and conference rooms are essential spaces where teams brainstorm, discuss ideas, negotiate, and strategize the way forward. These rooms are designed to foster seamless communication, connection, and collaboration—essential for helping teams achieve more together.",
+      image: "./images/Solutions/AV and Automation Solution/Video Collaboration/Boardroom_Conference Rooms.png",
+      details: [
+        {
+          title: "Modern Collaboration Features",
+          type: "list",
+          items: [
+            "High-quality visuals and audio systems for clear communication",
+            "Video conferencing capabilities for global team collaboration",
+            "Bring-your-own-device (BYOD) support with device-agnostic setups",
+            "Large displays for impactful presentations",
+            "Integrated audio setups with microphones and speakers"
+          ]
+        },
+        {
+          title: "Key Advantages",
+          type: "list",
+          items: [
+            "AV Control and Lighting Automation",
+            "Sound Reinforcement System",
+            "Collaboration & Conference System",
+            "Retrofittable, cost-effective solutions",
+            "Seamless interoperability with existing technology",
+            "Remote AV Asset Management",
+            "Prime support to guarantee 100% uptime"
+          ]
+        },
+        {
+          title: "Professional Services",
+          type: "list",
+          items: [
+            "Expert system design and installation",
+            "Remote maintenance for consistent performance",
+            "Regular upgrades and maintenance checks",
+            "15+ years of implementation experience",
+            "Solutions for various room sizes and requirements"
+          ]
+        },
+        {
+          title: "Business Benefits",
+          type: "list",
+          items: [
+            "Enhanced productivity through effective collaboration",
+            "Improved business continuity",
+            "Reduced operational costs",
+            "Strengthened company culture through clear communication",
+            "Future-ready scalable solutions"
+          ]
+        }
+      ]
+    },
+    {
+      category: "TOWN HALL",
+      title: "Cafeteria and Town Hall Solutions",
+      description: "Town Halls (or all-hands meetings) are essential for engaging employees, discussing key topics, and aligning teams. Whether in-person or virtual, creating a space for the whole organization to participate can be challenging. Symmetric IT Services helps transform cafeterias into large town hall or event spaces by integrating modern technologies.",
+      image: "./images/Solutions/AV and Automation Solution/Video Collaboration/Cafeteria and town halls.png",
+      details: [
+        {
+          title: "Key Features",
+          type: "list",
+          items: [
+            "Multi-use space transformation - cafeteria, town hall, and live event space in one",
+            "Multi-camera video capture with auto tracking for natural presenter movement",
+            "Live streaming and recording with cloud-based storage for on-demand access",
+            "Powerful management and production tools for simplified event control",
+            "Advanced controls for quick 'backstage' access to all systems"
+          ]
+        },
+        {
+          title: "Business Benefits",
+          type: "list",
+          items: [
+            "Smoother, more natural engagement in virtual, in-person, or hybrid town halls",
+            "Broadcast-quality stage setup for town halls, investor meetings, and media briefings",
+            "Improved audience engagement with strategic display placement",
+            "Quick switchability between cafeteria and town hall modes",
+            "Enhanced environment with live TV, digital signage, and background music"
+          ]
+        },
+        {
+          title: "Technical Capabilities",
+          type: "list",
+          items: [
+            "Multi-camera video capture with auto-tracking technology",
+            "Hardware-based or soft/cloud VC codecs for seamless communication",
+            "Programmed audio system with ceiling-mounted microphones and speakers",
+            "Centralized control system with touch panel/tablet interface",
+            "Networked AV switchers and auxiliary wall plates for flexible routing"
+          ]
+        },
+        {
+          title: "Space Optimization",
+          type: "list",
+          items: [
+            "Efficient real estate utilization through multi-purpose design",
+            "Seamless transition between different space configurations",
+            "Integrated environmental controls for optimal comfort",
+            "Flexible seating and staging arrangements",
+            "Advanced acoustics management for various use cases"
+          ]
+        }
+      ]
+    },
+    {
+      category: "HUDDLE",
+      title: "Collaborative Huddle Rooms",
+      description: "Large boardrooms and meeting rooms can be inefficient for smaller groups, leading to underutilized space and wasted resources. For smaller teams, huddle rooms are a far more effective solution, offering the ideal environment for brainstorming, interviews, or one-on-one meetings.",
+      image: "./images/Solutions/AV and Automation Solution/Video Collaboration/collaborative Huddle rooms.png",
+      details: [
+        {
+          title: "System Features",
+          type: "list",
+          items: [
+            "Robust: Built for reliability and consistent performance",
+            "Future-Proof: Designed to accommodate evolving technology needs",
+            "Scalable: Easily expandable as your organization grows",
+            "Easily Manageable Remotely: Centralized control and monitoring capabilities",
+            "Video conferencing and UCC features for seamless collaboration"
+          ]
+        },
+        {
+          title: "Key Benefits",
+          type: "list",
+          items: [
+            "Quiet Environment: Focused space for interactive discussions without distractions",
+            "Spontaneous Collaboration: Perfect for on-the-go meetings and impromptu brainstorming",
+            "Increased Flexibility: More agile way to accomplish tasks and foster collaboration",
+            "Cost-Effective Productivity: Budget-friendly solution for enhanced team productivity",
+            "Ideal for hybrid work setups and small group interactions"
+          ]
+        },
+        {
+          title: "Space Design",
+          type: "list",
+          items: [
+            "Optimized for 2-4 people with flexible seating arrangements",
+            "Integrated video conferencing and collaboration tools",
+            "Smart space utilization for maximum efficiency",
+            "Acoustic treatment for optimal sound quality",
+            "User-friendly technology interface"
+          ]
+        },
+        {
+          title: "Technology Integration",
+          type: "list",
+          items: [
+            "Advanced video conferencing capabilities",
+            "Wireless content sharing solutions",
+            "Interactive displays and whiteboards",
+            "High-quality audio systems",
+            "Simple, intuitive control systems"
+          ]
+        }
+      ]
+    },
+    {
+      category: "HYBRID",
+      title: "Hybrid Collaboration Rooms",
+      description: "Hybrid collaboration is becoming increasingly essential as organizations recognize the need for solutions that offer flexibility, agility, and resilience in today's evolving work environment. Symmetric IT Services helps organizations overcome the challenges and embrace the opportunities of hybrid work by creating meeting rooms that integrate seamlessly with virtual collaboration tools or unified communications (UC) infrastructure.",
+      image: "./images/Solutions/AV and Automation Solution/Video Collaboration/hybrid collaboration rooms.png",
+      details: [
+        {
+          title: "Key Features",
+          type: "list",
+          items: [
+            "Common connected experience for virtual and real-world meeting rooms",
+            "Cloud-based management tools for enhanced collaboration",
+            "Remote help desk support and room asset monitoring",
+            "Seamless integration with UC functionality",
+            "Cross-platform and cross-device compatibility"
+          ]
+        },
+        {
+          title: "Business Benefits",
+          type: "list",
+          items: [
+            "Create flexible spaces that can quickly transform for various activities",
+            "Support for multiple collaboration platforms (Teams, Zoom, Webex, etc.)",
+            "Consistent user experience across all devices and locations",
+            "Smooth integration with UC functionality using vendor-certified devices",
+            "Enhanced productivity through seamless collaboration tools"
+          ]
+        },
+        {
+          title: "Scalability & Flexibility",
+          type: "list",
+          items: [
+            "Versatile solution adaptable to various business needs",
+            "Scalable design suitable for small teams or large groups",
+            "Cloud-based infrastructure for meetings, training, and town halls",
+            "Wide range of certified devices from leading hardware partners",
+            "Flexible deployment options for different environments"
+          ]
+        },
+        {
+          title: "Technology Integration",
+          type: "list",
+          items: [
+            "Advanced video conferencing capabilities",
+            "High-quality audio and visual systems",
+            "Integrated control and management tools",
+            "Cloud-based collaboration features",
+            "Remote monitoring and support capabilities"
+          ]
+        }
+      ]
+    },
+    {
+      category: "VIDEO CONFERENCING",
+      title: "Understanding Video Conferencing",
+      description: "The next best thing to meeting in person is connecting through video conferencing, allowing for seamless interaction without being physically present. Modern video conferencing systems provide crystal-clear high-definition visuals and audio for a smooth and engaging experience. Today's fully integrated video conferencing solutions are designed for reliability, ensuring your meetings and presentations proceed without a hitch.",
+      image: "./images/Solutions/AV and Automation Solution/Video Collaboration/video conferencing rooms.png",
+      details: [
+        {
+          title: "Key Features",
+          type: "list",
+          items: [
+            "Crystal-clear high-definition visuals and audio for smooth engagement",
+            "Session recording and transcription capabilities for easy reference",
+            "Plug-and-play systems with true-to-life picture quality",
+            "Fully integrated solutions designed for reliability",
+            "Easy content sharing and collaboration tools"
+          ]
+        },
+        {
+          title: "Business Benefits",
+          type: "list",
+          items: [
+            "Enhanced communication across teams for better collaboration",
+            "Greater flexibility to work from any location",
+            "Reduced travel time, costs, and carbon emissions",
+            "Faster project completion with fewer delays",
+            "Improved overall productivity and team efficiency"
+          ]
+        },
+        {
+          title: "Technology Solutions",
+          type: "list",
+          items: [
+            "Proprietary technologies and top-tier IP integration",
+            "Smooth, uninterrupted conferencing experience",
+            "Reliable, scalable, and easy-to-use systems",
+            "Premium quality hardware and software solutions",
+            "Unified, user-friendly environment for all participants"
+          ]
+        },
+        {
+          title: "Implementation Benefits",
+          type: "list",
+          items: [
+            "Simple and flexible meeting setup",
+            "Cost-effective solutions for organizations of all sizes",
+            "Trusted by organizations worldwide",
+            "Comprehensive support and maintenance",
+            "Seamless integration with existing infrastructure"
+          ]
+        }
+      ]
+    },
+    {
+      category: "MULTIPURPOSE",
+      title: "Multi-purpose Rooms",
+      description: "As real-estate costs appreciate, most businesses in urban locations need to utilise their space more productively. This makes multipurpose or multi-utility spaces – which can perform more than one business function – an extremely powerful tool in improving the ROI of modern office spaces. Multipurpose Halls designed by Symmetric IT Services provide businesses with flexible spaces which can quickly be adapted for different types of collaborative events and audience sizes.",
+      image: "./images/Solutions/AV and Automation Solution/Video Collaboration/multipurpose rooms.png",
+      details: [
+        {
+          title: "Key Benefits",
+          type: "list",
+          items: [
+            "Create flexible spaces that quickly transform for various activities",
+            "Increase ROI on office space by using one room for multiple business functions",
+            "Provide teams with access to additional collaboration, conferencing or training facilities",
+            "AV system presets help make effortless adjustments instantly between modes",
+            "Leverage networked AV to allow quick re-alignment of seating and AV tools"
+          ]
+        },
+        {
+          title: "Space Flexibility",
+          type: "list",
+          items: [
+            "Divisible rooms for different configurations",
+            "Adaptable layouts for various business functions",
+            "Combined space options for larger events",
+            "Suitable for town halls, press conferences, and investor meetings",
+            "Quick transformation between different use cases"
+          ]
+        },
+        {
+          title: "Technology Integration",
+          type: "list",
+          items: [
+            "Flexible connectivity interfaces for various collaborative applications",
+            "Remote operation capability from centralized backroom",
+            "Real-time wired and wireless sharing systems",
+            "Ceiling-mounted beam tracking microphones",
+            "Adaptable audio routing based on room configuration"
+          ]
+        },
+        {
+          title: "Productivity Features",
+          type: "list",
+          items: [
+            "Enhanced workspace efficiency through AV technology",
+            "Seamless transition between different room modes",
+            "Integrated collaboration tools for multiple use cases",
+            "Centralized control and management systems",
+            "Optimized space utilization for maximum ROI"
+          ]
+        }
+      ]
     }
-  ];
+  ]; // End of videoCollaboration array
 
   const visualSolutions = [
     {
-      category: "VISUAL SOLUTIONS",
-      title: "Professional Display Systems",
-      description: "High-end visual solutions",
-      image: "https://picsum.photos/800/611",
+      category: "DIGITAL SIGNAGE",
+      title: "Digital Signage",
+      description: "Digital signage is everywhere, from eye-catching advertisements in malls and restaurant menu boards to movie schedules in theaters. It's a powerful blend of hardware and software, seamlessly working together to display multimedia content that grabs attention. With Symmetric IT Services' digital display solutions, you can efficiently distribute relevant content, from social media feeds to company updates, across multiple locations or spaces with a single click.",
+      image: "./images/Solutions/AV and Automation Solution/Visual Solutions/Digital Signage.jpeg",
+      details: [
+        {
+          title: "Key Benefits",
+          type: "list",
+          items: [
+            "Drive purchase decisions at the point of sale",
+            "Strengthen and communicate brand identity",
+            "Create a memorable impact during product launches",
+            "Educate and keep employees or customers informed and updated",
+            "Support navigation and wayfinding within the premises"
+          ]
+        },
+        {
+          title: "Video Wall Features",
+          type: "list",
+          items: [
+            "Multiple displays tiled to form one large, cohesive screen",
+            "High-resolution images and videos on a grand scale",
+            "Immersive visual impact for enhanced engagement",
+            "Seamless content distribution across multiple locations",
+            "Cloud-based management for easy updates"
+          ]
+        },
+        {
+          title: "Industry Applications",
+          type: "list",
+          items: [
+            "Corporate: Internal communications and branding",
+            "Tourism & Hospitality: Guest information and entertainment",
+            "Education: Campus communications and wayfinding",
+            "Retail: Product promotions and customer engagement",
+            "Public Spaces: Information display and advertising"
+          ]
+        },
+        {
+          title: "Implementation Solutions",
+          type: "list",
+          items: [
+            "End-to-end digital signage solutions for various environments",
+            "Cloud-based content management systems",
+            "Interactive display capabilities",
+            "Expansive video wall configurations",
+            "Industry-specific customization options"
+          ]
+        }
+      ]
+    },
+    {
+      category: "PROJECTOR",
+      title: "Projector Solution",
+      description: "Customers need high-quality, reliable projectors for business, education, or home use, with easy integration into existing systems. Our projectors deliver bright, sharp images with customizable features for various settings.",
+      image: "./images/Solutions/AV and Automation Solution/Visual Solutions/projector solutions.png",
+      details: [
+        {
+          title: "Key Features",
+          type: "list",
+          items: [
+            "High-quality, bright and sharp image projection",
+            "Easy integration with existing systems",
+            "Simple controls and minimal setup requirements",
+            "Customizable features for different environments",
+            "Scalable solutions for future expansion"
+          ]
+        },
+        {
+          title: "User Experience",
+          type: "list",
+          items: [
+            "Intuitive interface for easy operation",
+            "Quick setup and configuration",
+            "Seamless device compatibility",
+            "Flexible mounting options",
+            "User-friendly control systems"
+          ]
+        },
+        {
+          title: "Technical Benefits",
+          type: "list",
+          items: [
+            "Advanced image processing technology",
+            "Multiple input/output options",
+            "Wireless connectivity capabilities",
+            "Energy-efficient operation",
+            "Low maintenance requirements"
+          ]
+        },
+        {
+          title: "Value Addition",
+          type: "list",
+          items: [
+            "Professional installation services",
+            "Consistent performance monitoring",
+            "Customization options for specific needs",
+            "Comprehensive technical support",
+            "Cost-effective yet feature-rich solutions"
+          ]
+        }
+      ]
     }
-  ];
-
-  const allSolutions = [
-    { title: "Networking Solutions", items: networkingSolutions },
-    { title: "Building Technologies", items: buildingTechnologies },
-    { title: "Luxury Home Solutions", items: luxuryHomes },
-    { title: "Network Control & Automation Solutions", items: networkControl },
-    { title: "Video Collaboration & Unified Communication", items: videoCollaboration },
-    { title: "Visual Solutions", items: visualSolutions }
   ];
 
   // Group solutions into main categories
@@ -1947,4 +2385,4 @@ const Solutions = () => {
   );
 };
 
-export default Solutions; 
+export default Solutions;

@@ -3,7 +3,7 @@ import { useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import './NetworkingSolutions.css';
 
-const NetworkingSolutions = () => {
+function NetworkingSolutions() {
   const [searchQuery, setSearchQuery] = useState("");
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -259,6 +259,6 @@ const NetworkingSolutions = () => {
       </AnimatePresence>
     </div>
   );
-};
+}
 
 export default NetworkingSolutions; 
