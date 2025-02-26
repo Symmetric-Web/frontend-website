@@ -187,7 +187,7 @@ function Home() {
                 <img src="/images/home/Services/Audio-Visual and Automation Solutions.png" alt="Audio-Visual Solutions" />
               </div>
               <div className="service-content">
-                <h3>Audio-Visual and Automation Solutions</h3>
+                <h3>AV and Automation Solutions</h3>
                 <p>State-of-the-art AV systems and automation solutions for enhanced communication and control.</p>
                 <span className="learn-more">Learn More →</span>
               </div>

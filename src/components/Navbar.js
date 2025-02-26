@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import './Navbar.css';
 
-function Navbar() {
+const Navbar = () => {
   const location = useLocation();
+  const [isProductsOpen, setIsProductsOpen] = useState(false);
+  const [isSolutionsOpen, setSolutionsOpen] = useState(false);
 
   const scrollToTop = () => {
     if (location.pathname === '/') {
@@ -27,18 +29,39 @@ function Navbar() {
             </Link>
           </li>
           <li className="nav-item">
-            <Link to="/networking" className="nav-link">
-              Networking Solutions
+            <Link to="/about" className="nav-link">
+              About Us
             </Link>
           </li>
           <li className="nav-item">
-            <Link to="/building-tech" className="nav-link">
-              Building Technologies
+            <div 
+              className="nav-item dropdown"
+              onMouseEnter={() => setIsProductsOpen(true)}
+              onMouseLeave={() => setIsProductsOpen(false)}
+            >
+              <span>Our Products</span>
+              {isProductsOpen && (
+                <div className="dropdown-content">
+                  <Link to="/networking">Networking Solutions</Link>
+                  <Link to="/building-tech">Building Technologies</Link>
+                  <Link to="/audio-visual">AV and Automation Solutions</Link>
+                </div>
+              )}
+            </div>
+          </li>
+          <li className="nav-item">
+            <Link to="/solutions" className="nav-link">
+              Our Solutions
             </Link>
           </li>
           <li className="nav-item">
-            <Link to="/audio-visual" className="nav-link">
-              Audio-Visual and Automation Solutions
+            <Link to="/case-study" className="nav-link">
+              Case Study
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link to="/blog" className="nav-link">
+              Blog
             </Link>
           </li>
           <li className="nav-item">
@@ -50,6 +73,6 @@ function Navbar() {
       </div>
     </nav>
   );
-}
+};
 
 export default Navbar; 

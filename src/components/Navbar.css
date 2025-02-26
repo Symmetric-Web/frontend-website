@@ -1,29 +1,26 @@
 .navbar {
-  background-color: #fff;
-  height: 80px;
+  background: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   position: sticky;
   top: 0;
-  z-index: 999;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  height: 80px; /* Fixed height */
 }
 
 .navbar-container {
+  max-width: 1400px;
+  margin: 0 auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /* Space between logo and menu */
   align-items: center;
   height: 100%;
-  max-width: 1300px;
-  margin: 0 auto;
-  padding: 0 50px;
+  padding: 0 2rem;
 }
 
 .navbar-logo {
   display: flex;
   align-items: center;
-  user-select: none;
-  -webkit-user-select: none; /* Safari */
-  -moz-user-select: none; /* Firefox */
-  -ms-user-select: none; /* IE10+/Edge */
+  height: 100%; /* Full height */
 }
 
 .navbar-logo img {
@@ -38,20 +35,92 @@
   list-style: none;
   margin: 0;
   padding: 0;
+  height: 100%; /* Full height */
 }
 
 .nav-item {
-  margin-left: 30px;
+  height: 100%; /* Full height */
+  display: flex;
+  align-items: center;
+  margin: 0 0.5rem;
 }
 
 .nav-link {
   color: #333;
   text-decoration: none;
-  font-size: 16px;
+  padding: 0 1rem;
+  font-size: 1rem;
   font-weight: 500;
   transition: color 0.3s ease;
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
 
-.nav-link:hover {
+.nav-item:hover {
   color: #007bff;
+}
+
+/* Dropdown styles */
+.dropdown {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  cursor: pointer;
+  position: relative;
+}
+
+.dropdown span {
+  color: #333;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.dropdown-content {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-10px);
+  background: white;
+  min-width: 200px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  padding: 0.5rem 0;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  animation: dropdownAppear 0.2s ease forwards;
+}
+
+.dropdown-content a {
+  color: #333;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  white-space: nowrap;
+}
+
+.dropdown-content a:hover {
+  background-color: #f8f9fa;
+  color: #007bff;
+}
+
+@keyframes dropdownAppear {
+  to {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .nav-container {
+    padding: 0 1rem;
+  }
+
+  .nav-item {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+  }
 } 
