@@ -388,20 +388,20 @@
   overflow: hidden;
 }
 
-/* Add background colors for each main category */
+/* Update background colors for each main category */
 .category-container.networking {
-  background-color: #f5f7fa;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  background-color: #d4d8dd;  /* Even darker version */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
 .category-container.building {
-  background-color: #eef2f7;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  background-color: #c8ced6;  /* Even darker version */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
 .category-container.av-automation {
-  background-color: #e8eef5;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  background-color: #bcc5d0;  /* Even darker version */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
 /* Update section title for categories */
@@ -411,4 +411,25 @@
   margin-bottom: 2rem;
   padding: 0 4rem;
   color: #000;
+}
+
+.category-card h3 {
+  color: #007bff;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  font-weight: 600;
+  position: relative;
+  padding-bottom: 15px;
+  display: inline-block;
+}
+
+.category-card h3::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: #007bff;
+  border-radius: 2px;
 } 
