@@ -5,7 +5,6 @@ import './Navbar.css';
 const Navbar = () => {
   const location = useLocation();
   const [isProductsOpen, setIsProductsOpen] = useState(false);
-  const [isSolutionsOpen, setSolutionsOpen] = useState(false);
 
   const scrollToTop = () => {
     if (location.pathname === '/') {

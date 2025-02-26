@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import CountUp from 'react-countup';
 import './Home.css';
 import { SuccessStoriesCarousel } from '../components/SuccessStoriesCarousel';
 import { motion, AnimatePresence } from 'framer-motion';
