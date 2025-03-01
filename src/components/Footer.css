@@ -1,0 +1,382 @@
+.footer {
+  padding: 60px 0;
+  background: #f8f9fa;
+  border-top: 1px solid #eee;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.contact-form-section {
+  width: 100%;
+}
+
+.contact-form-section h2,
+.map-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+.contact-form textarea {
+  height: 120px;
+  resize: vertical;
+}
+
+.contact-form button {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #0056b3;
+}
+
+.map-section {
+  width: 600px;
+  height: 450px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+}
+
+.map-section iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 12px;
+}
+
+@media (max-width: 1200px) {
+  .map-section {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .map-section {
+    height: 400px;
+  }
+}
+
+.footer-info {
+  margin-top: 40px;
+  background: #12378f;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 40px;
+  border-radius: 50px;
+  max-width: 1200px;
+  margin: 40px auto 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #fff;
+}
+
+/* Left section (Phone) */
+.info-item:first-child {
+  flex: 1;
+}
+
+/* Middle section (Address) */
+.info-item:nth-child(2) {
+  flex: 2;
+  text-align: center;
+  justify-content: center;
+}
+
+/* Right section (Work time) */
+.info-item:last-child {
+  flex: 1;
+  justify-content: flex-end;
+}
+
+.info-item .icon {
+  font-size: 20px;
+  color: #4CAF50;
+  background: #fff;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: all 0.3s ease;
+}
+
+.info-item .text {
+  display: flex;
+  flex-direction: column;
+}
+
+.info-item .text span {
+  font-weight: 600;
+  color: #fff;
+  font-size: 0.95rem;
+  margin-bottom: 2px;
+}
+
+.info-item .text a,
+.info-item .text p {
+  margin: 0;
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.info-item .text a {
+  margin: 0;
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  transition: all 0.3s ease;
+}
+
+.info-item .text a:hover {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  transform: translateY(-1px);
+}
+
+/* Add hover effect to the entire phone and address items */
+.info-item:first-child:hover .icon,
+.info-item:nth-child(2):hover .icon {
+  transform: scale(1.1);
+  background: #e8e8e8;
+}
+
+/* Mobile view adjustments */
+@media (max-width: 1024px) {
+  .footer-info {
+    flex-direction: column;
+    border-radius: 25px;
+    padding: 25px;
+    gap: 25px;
+  }
+
+  .info-item {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  /* Override the right alignment of work time in mobile view */
+  .info-item:last-child {
+    justify-content: center; /* Changed from flex-end to center */
+  }
+
+  .info-item .text {
+    align-items: center;
+  }
+
+  .info-item:nth-child(2) {
+    max-width: 100%;
+  }
+
+  .info-item .text a,
+  .info-item .text p {
+    text-align: center;
+  }
+}
+
+.footer-bottom {
+  background: #12378f;
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+}
+
+.footer-branding {
+  flex: 1.5;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 400px;
+}
+
+.footer-logo {
+  height: auto;
+  width: 250px;
+  object-fit: contain;
+}
+
+.footer-tagline {
+  color: white;
+  font-size: 1.4rem;
+  line-height: 1.6;
+  font-style: italic;
+  font-weight: 300;
+  background: linear-gradient(120deg, #ffffff 0%, rgba(255,255,255,0.8) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: left;
+}
+
+.newsletter-section {
+  flex: 1;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.newsletter-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.newsletter-section p {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  opacity: 0.9;
+}
+
+.newsletter-input {
+  display: flex;
+  align-items: center;
+  background: white;
+  border-radius: 50px;
+  padding: 4px;
+  overflow: hidden;
+  width: 300px;
+  margin: 0 auto;
+}
+
+.newsletter-input input {
+  flex: 1;
+  padding: 8px 16px;
+  border: none;
+  outline: none;
+  font-size: 0.9rem;
+  background: transparent;
+}
+
+.newsletter-input button {
+  background: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.newsletter-input button:hover {
+  background: #388E3C;
+  transform: scale(1.05);
+}
+
+.social-links {
+  flex: 0.5;
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.social-icon {
+  background: white;
+  color: #12378f;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 1024px) {
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 20px;
+    gap: 2rem;
+  }
+
+  .footer-branding {
+    align-items: center;
+  }
+
+  .newsletter-section {
+    width: 100%;
+  }
+
+  .newsletter-input {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-tagline {
+    font-size: 1.2rem;
+  }
+
+  .footer-logo {
+    width: 180px;
+  }
+
+  .newsletter-section h2 {
+    font-size: 1.5rem;
+  }
+} 

@@ -5,6 +5,7 @@ import './Navbar.css';
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isProductsOpen, setIsProductsOpen] = useState(false);
+  const [isSolutionsOpen, setIsSolutionsOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -13,12 +14,14 @@ const Navbar = () => {
     } else {
       document.body.style.overflow = 'unset';
       setIsProductsOpen(false);
+      setIsSolutionsOpen(false);
     }
   };
 
   const closeMenu = () => {
     setIsMenuOpen(false);
     setIsProductsOpen(false);
+    setIsSolutionsOpen(false);
     document.body.style.overflow = 'unset';
   };
 
@@ -40,9 +43,9 @@ const Navbar = () => {
           <li className="nav-item dropdown">
             <span>Our Products</span>
             <div className="dropdown-content">
-              <Link to="/networking">Networking Solutions</Link>
+              <Link to="/networking">Networking Products</Link>
               <Link to="/building-tech">Building Technologies</Link>
-              <Link to="/audio-visual">AV and Automation Solutions</Link>
+              <Link to="/audio-visual">AV and Automation Products</Link>
             </div>
           </li>
           <li className="nav-item">
@@ -107,9 +110,21 @@ const Navbar = () => {
               </div>
             </div>
 
-            <Link to="/solutions" className="menu-item" onClick={closeMenu}>
-              Our Solutions
-            </Link>
+            <div className="menu-item dropdown">
+              <button 
+                className="dropdown-toggle"
+                onClick={() => setIsSolutionsOpen(!isSolutionsOpen)}
+              >
+                Our Solutions
+                <span className={`arrow ${isSolutionsOpen ? 'open' : ''}`}>▼</span>
+              </button>
+
+              <div className={`dropdown-menu ${isSolutionsOpen ? 'open' : ''}`}>
+                <Link to="/solutions" onClick={closeMenu}>
+                  Our Solutions
+                </Link>
+              </div>
+            </div>
 
             <Link to="/case-study" className="menu-item" onClick={closeMenu}>
               Case Study

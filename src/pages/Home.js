@@ -145,7 +145,7 @@ function Home() {
           <div className="container">
             <div className="about-content">
               <div className="about-text">
-                <h2>About Us</h2>
+                <h2 className="section-title">About Us</h2>
                 <p>At Symmetric IT Services, we're committed to delivering cutting-edge technology solutions. As a pioneering force in the IT sector, we've been at the forefront of digital transformation. Our mission is simple yet profound: to create innovative solutions that empower businesses to thrive in the digital age.</p>
               </div>
               <div className="about-logo">
@@ -159,7 +159,7 @@ function Home() {
       {/* Services Section */}
       <section className="services" id="services">
         <div className="container">
-          <h2 className="section-title">Our Services</h2>
+          <h2 className="section-title">Our IntegratedServices</h2>
           <div className="services-grid">
             <Link to="/networking" className="service-card">
               <div className="service-image">
@@ -195,10 +195,72 @@ function Home() {
         </div>
       </section>
 
+      {/* Director's Message Section */}
+      <section className="directors-message">
+        <div className="container">
+          <h2 className="section-title">Director's Message</h2>
+          <div className="message-container">
+            <div className="director-image">
+              <img 
+                src="images/team/Suresh Kamath.png" 
+                alt="Suresh Kamath - Director" 
+                className="director-photo"
+              />
+              <h3>Suresh Kamath</h3>
+              <p className="director-title">Director, Symmetric IT Pvt Ltd</p>
+            </div>
+            <div className="message-content">
+              <p className="intro">
+                Hello I am Suresh Kamath from Symmetric IT Services. We help businesses across various sector including Factory, building, residential apartment, healthcare, Education, Highways, Energy etc on our S.E.R.V.E principle
+              </p>
+              
+              <div className="serve-principles">
+                <div className="principle">
+                  <div className="principle-item">
+                    <strong>S - Strategic Alignment:</strong>
+                    <p>Our technology solutions are strategically aligned to support our clients' long-term business goals. By closely partnering with our clients, we develop tailored solutions that enable them to achieve their desired outcomes.</p>
+                  </div>
+                  
+                  <div className="principle-item">
+                    <strong>E - Expertise Unleashed:</strong>
+                    <p>Our skilled professionals unleash their expertise to deliver top-notch Technology solutions tailored to client needs.</p>
+                  </div>
+                  
+                  <div className="principle-item">
+                    <strong>R - Reliable Partnership:</strong>
+                    <p>As a trusted technology partner, we are committed to delivering consistent and dependable support that empowers our clients' growth. Our satisfied customers are those with a strong desire to expand their business, seeking a System integrator to guide them on their journey.</p>
+                  </div>
+                  
+                  <div className="principle-item">
+                    <strong>V - Value-driven Solutions:</strong>
+                    <p>Our tech solutions are designed to deliver exceptional value and drive measurable business growth for our clients. Crafted by industry experts, our offerings are tailored to maximize their return on investment and propel their organization forward.</p>
+                  </div>
+                  
+                  <div className="principle-item">
+                    <strong>E - Exceptional Customer Experience:</strong>
+                    <p>We prioritize delivering exceptional customer experiences. Our team is dedicated to providing seamless communication and prompt resolution of any technology-related challenges our clients may face.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="message-footer">
+                <p className="conclusion">
+                  We are Technology integration Alchemists. The kind of customers who love our work are those who want to harness the power of intelligent technology and with a strong desire to expand their business. For our S.E.R.V.E principle is not just a statement but a 5 point of promise to our customer we have kept us for more than 15 years as a leading system integrator.
+                </p>
+                
+                <p className="implementation">
+                  When it comes to Implementation, many other Technology Solution providers fall short with their limited capabilities, constrained cash flow, and lack of essential infrastructure, tools, and manpower. We have the necessary infrastructure, systems and processes, cutting-edge tools, and a well-equipped team to handle even the most complex projects. Our team of experts possesses a wide range of skills and in-depth knowledge, making them uniquely positioned to address clients' specific challenges effectively and ensure that their technology requirements are met with the utmost professionalism and efficiency.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Leadership Team Section */}
       <section className="leadership">
         <div className="container">
-          <h2>Leadership Team</h2>
+          <h2 className="section-title">Leadership Team</h2>
           <div className="team-grid">
             {teamMembers.map((member) => (
               <div key={member.id} className="team-member">
@@ -272,19 +334,9 @@ function Home() {
         </div>
       </section>
 
-      {/* Contact Form Section */}
-      <section className="contact">
-        <div className="container">
-          <h2>Contact Us</h2>
-          <form className="contact-form">
-            <input type="text" placeholder="Name" required />
-            <input type="email" placeholder="Email" required />
-            <input type="tel" placeholder="Contact Number" required />
-            <textarea placeholder="Message" required></textarea>
-            <button type="submit">Send Message</button>
-          </form>
-        </div>
-      </section>
+      
+
+
     </div>
   );
 }

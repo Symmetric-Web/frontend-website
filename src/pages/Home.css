@@ -3,18 +3,19 @@
 }
 
 .container {
-  max-width: 1300px;
+  padding: 0 2rem;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 0 50px;
 }
 
 /* Hero Section */
 .hero {
   position: relative;
   min-height: auto;
-  background-color: #ffffff;
+  background: #fff;
   overflow: hidden;
   padding: 0 !important;
+  padding-top: 80px; /* Account for navbar */
 }
 
 .hero-content {
@@ -211,8 +212,8 @@
 
 /* Services Section */
 .services {
-  background-color: #f8f9fa;
-  padding: 100px 0;
+  background: #f8f9fa;
+  padding: 80px 0;
 }
 
 .section-title {
@@ -309,7 +310,7 @@
 
 /* Leadership Team Section */
 .leadership {
-  background-color: #f8f9fa;
+  background: #f8f9fa;
   padding: 80px 0;
 }
 
@@ -384,19 +385,50 @@
 }
 
 /* Contact Form Section */
+.contact {
+  background: #f8f9fa;
+  padding: 80px 0;
+}
+
+.contact-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.contact-form-section {
+  width: 100%;
+}
+
+.contact-form-section h2,
+.map-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
 .contact-form {
   display: flex;
   flex-direction: column;
-  max-width: 600px;
-  margin: 0 auto;
+  gap: 1rem;
+  width: 100%;
 }
 
 .contact-form input,
 .contact-form textarea {
-  margin: 10px 0;
-  padding: 10px;
+  width: 100%;
+  padding: 0.75rem;
   border: 1px solid #ddd;
   border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+.contact-form textarea {
+  height: 120px;
+  resize: vertical;
 }
 
 .contact-form button {
@@ -413,16 +445,29 @@
   background-color: #0056b3;
 }
 
-/* Responsive design */
-@media (max-width: 768px) {
-  .hero-text h1 {
-    font-size: 2.5rem;
-  }
+.map-section {
+  width: 100%;
+  height: 400px; /* Fixed height */
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-@media (max-width: 480px) {
-  .hero-text h1 {
-    font-size: 2rem;
+.map-section iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 12px;
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .map-section {
+    height: 300px;
   }
 }
 
@@ -729,4 +774,153 @@
   .about-logo img {
     max-width: 300px;
   }
+}
+
+.directors-message {
+  background: #fff;
+  padding: 80px 0;
+  margin-top: 0; /* Remove extra margin */
+}
+
+.message-container {
+  display: flex;
+  gap: 3rem;
+  align-items: flex-start;
+  margin-top: 2rem;
+}
+
+.director-image {
+  flex: 0 0 250px;
+  text-align: center;
+  position: sticky;
+  top: 100px;
+  z-index: 1;
+}
+
+.director-photo {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  border: 3px solid #fff;
+}
+
+.director-image h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 0.3rem;
+}
+
+.director-title {
+  color: #666;
+  font-size: 1rem;
+}
+
+.message-content {
+  flex: 1;
+}
+
+.message-content .intro {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.serve-principles {
+  margin: 1.5rem 0;
+}
+
+.principle {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.principle-item {
+  padding: 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+.principle-item:last-child {
+  border-bottom: none;
+}
+
+.principle-item strong {
+  color: #12378f;
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.principle-item p {
+  color: #666;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.message-footer {
+  margin-top: 2rem;
+}
+
+.conclusion, .implementation {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #444;
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 1024px) {
+  .message-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .director-image {
+    position: static;
+    margin-bottom: 2rem;
+  }
+
+  .message-content {
+    text-align: left;
+  }
+}
+
+@media (max-width: 768px) {
+  .directors-message {
+    padding: 40px 0;
+  }
+
+  .director-photo {
+    width: 180px;
+    height: 180px;
+  }
+
+  .principle {
+    padding: 1rem;
+  }
+
+  .principle-item {
+    padding: 0.8rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .directors-message {
+    margin-top: 60px;
+  }
+
+  .director-image {
+    position: static;
+    margin-bottom: 2rem;
+  }
+}
+
+/* Remove any extra margins between sections */
+section {
+  margin: 0;
 } 
