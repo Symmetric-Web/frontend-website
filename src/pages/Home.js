@@ -105,6 +105,8 @@ function Home() {
               Our commitment to innovative technology solutions is paving the way for a smarter, 
               more connected future. Join us on a journey towards transforming the way businesses operate.
             </p>
+            <br />  
+            <br />  
             <div className="hero-buttons">
               <a href="#services" onClick={scrollToServices} className="btn btn-primary">Our services</a>
               <Link to="/contact" className="btn btn-secondary">Get in touch</Link>
@@ -211,38 +213,8 @@ function Home() {
             </div>
             <div className="message-content">
               <p className="intro">
-                Hello I am Suresh Kamath from Symmetric IT Services. We help businesses across various sector including Factory, building, residential apartment, healthcare, Education, Highways, Energy etc on our S.E.R.V.E principle
+                Hello I am Suresh Kamath from Symmetric IT Services. We help businesses across various sector including Factory, building, residential apartment, healthcare, Education, Highways, Energy etc
               </p>
-              
-              <div className="serve-principles">
-                <div className="principle">
-                  <div className="principle-item">
-                    <strong>S - Strategic Alignment:</strong>
-                    <p>Our technology solutions are strategically aligned to support our clients' long-term business goals. By closely partnering with our clients, we develop tailored solutions that enable them to achieve their desired outcomes.</p>
-                  </div>
-                  
-                  <div className="principle-item">
-                    <strong>E - Expertise Unleashed:</strong>
-                    <p>Our skilled professionals unleash their expertise to deliver top-notch Technology solutions tailored to client needs.</p>
-                  </div>
-                  
-                  <div className="principle-item">
-                    <strong>R - Reliable Partnership:</strong>
-                    <p>As a trusted technology partner, we are committed to delivering consistent and dependable support that empowers our clients' growth. Our satisfied customers are those with a strong desire to expand their business, seeking a System integrator to guide them on their journey.</p>
-                  </div>
-                  
-                  <div className="principle-item">
-                    <strong>V - Value-driven Solutions:</strong>
-                    <p>Our tech solutions are designed to deliver exceptional value and drive measurable business growth for our clients. Crafted by industry experts, our offerings are tailored to maximize their return on investment and propel their organization forward.</p>
-                  </div>
-                  
-                  <div className="principle-item">
-                    <strong>E - Exceptional Customer Experience:</strong>
-                    <p>We prioritize delivering exceptional customer experiences. Our team is dedicated to providing seamless communication and prompt resolution of any technology-related challenges our clients may face.</p>
-                  </div>
-                </div>
-              </div>
-
               <div className="message-footer">
                 <p className="conclusion">
                   We are Technology integration Alchemists. The kind of customers who love our work are those who want to harness the power of intelligent technology and with a strong desire to expand their business. For our S.E.R.V.E principle is not just a statement but a 5 point of promise to our customer we have kept us for more than 15 years as a leading system integrator.

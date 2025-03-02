@@ -48,8 +48,13 @@ const Navbar = () => {
               <Link to="/audio-visual">AV and Automation Products</Link>
             </div>
           </li>
-          <li className="nav-item">
-            <Link to="/solutions" className="nav-link">Our Solutions</Link>
+          <li className="nav-item dropdown">
+            <span>Our Solutions</span>
+            <div className="dropdown-content">
+              <Link to="/networking-solutions">Networking Solutions</Link>
+              <Link to="/building-tech-solutions">Building Technology Solutions</Link>
+              <Link to="/av-automation-solutions">AV & Automation Solutions</Link>
+            </div>
           </li>
           <li className="nav-item">
             <Link to="/case-study" className="nav-link">Case Study</Link>
@@ -120,8 +125,14 @@ const Navbar = () => {
               </button>
 
               <div className={`dropdown-menu ${isSolutionsOpen ? 'open' : ''}`}>
-                <Link to="/solutions" onClick={closeMenu}>
-                  Our Solutions
+                <Link to="/networking-solutions" onClick={closeMenu}>
+                  Networking Solutions
+                </Link>
+                <Link to="/building-tech-solutions" onClick={closeMenu}>
+                  Building Technology Solutions
+                </Link>
+                <Link to="/av-automation-solutions" onClick={closeMenu}>
+                  AV & Automation Solutions
                 </Link>
               </div>
             </div>
