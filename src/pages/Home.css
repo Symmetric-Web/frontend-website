@@ -923,4 +923,16 @@
 /* Remove any extra margins between sections */
 section {
   margin: 0;
+}
+
+.serve-link {
+  color: #3376da;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.serve-link:hover {
+  color: #2255a5;
+  text-decoration: underline;
 } 

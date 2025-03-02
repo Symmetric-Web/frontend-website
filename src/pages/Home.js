@@ -217,7 +217,20 @@ function Home() {
               </p>
               <div className="message-footer">
                 <p className="conclusion">
-                  We are Technology integration Alchemists. The kind of customers who love our work are those who want to harness the power of intelligent technology and with a strong desire to expand their business. For our S.E.R.V.E principle is not just a statement but a 5 point of promise to our customer we have kept us for more than 15 years as a leading system integrator.
+                  We are Technology integration Alchemists. The kind of customers who love our work are those who want to harness the power of intelligent technology and with a strong desire to expand their business. For our{' '}
+                  <Link 
+                    to="/about#why-choose-us" 
+                    className="serve-link"
+                    onClick={(e) => {
+                      setTimeout(() => {
+                        const element = document.getElementById('why-choose-us');
+                        element?.scrollIntoView({ behavior: 'smooth' });
+                      }, 100);
+                    }}
+                  >
+                    S.E.R.V.E principle
+                  </Link>
+                  {' '}is not just a statement but a 5 point of promise to our customer we have kept us for more than 15 years as a leading system integrator.
                 </p>
                 
                 <p className="implementation">

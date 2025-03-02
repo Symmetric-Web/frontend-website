@@ -107,6 +107,50 @@ const About = () => {
           </div>
         </div>
       </section>
+
+
+      <section className="process-section">
+        <div className="container">
+          <h2 className="section-title">Our Methodology</h2>
+          <div className="methodology-grid">
+            <div className="methodology-item">
+              <div className="methodology-icon">
+                <img src="/images/about us/Methodology/Discover.png" alt="Discover" />
+              </div>
+              <h2>Discover</h2>
+              <p>We make an effort to comprehend your problems and how we might assist.</p>
+            </div>
+
+            <div className="methodology-item">
+              <div className="methodology-icon">
+                <img src="/images/about us/Methodology/Integrate.png" alt="Integrate" />
+              </div>
+              <h2>Integrate</h2>
+              <p>Integrate technology from several domains to provide new and value-added solutions.</p>
+            </div>
+
+            <div className="methodology-item">
+              <div className="methodology-icon">
+                <img src="/images/about us/Methodology/Manage.png" alt="Manage" />
+              </div>
+              <h2>Manage</h2>
+              <p>We oversee your technology infrastructure, guaranteeing 24x7 seamless delivery by maintaining uptime, swift response times, and satisfactory issue resolution.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="process-section" id="why-choose-us">
+        <div className="container">
+          <h2 className="section-title">Why Choose Us?</h2>
+          <div className="team-grid">
+            <div className="team-item">
+              <img src="/images/about us/why Symmetric.png" alt="why symmetric" />
+            </div>
+            
+          </div>
+        </div>
+      </section>
     </div>
   );
 };
