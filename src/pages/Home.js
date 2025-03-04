@@ -114,30 +114,34 @@ function Home() {
           </div>
           <div className="hero-images">
             <div className="image-grid">
-              <div className="image-item">
+              <Link to="/networking" className="image-item">
                 <img src="/images/home/Networking.png" alt="Networking" />
                 <div className="image-overlay">
-                  <h3>Networking Solutions</h3>
+                  <h3>Networking Products</h3>
                 </div>
-              </div>
-              <div className="image-item">
+              </Link>
+              <Link to="/building-tech" className="image-item">
                 <img src="images/home/Building Technology.png" alt="Building Tech" />
                 <div className="image-overlay">
-                  <h3>Building Technologies</h3>
+                  <h3>Building Technology Products</h3>
                 </div>
-              </div>
-              <div className="image-item">
+              </Link>
+
+
+              <Link to="https://symmetric-it-services-pvt-ltd.vercel.app"target="_blank" className="image-item">
                 <img src="images/home/home automation.jpeg" alt="Automation" />
                 <div className="image-overlay">
-                  <h3>Home Automation</h3>
+                <div className="image-overlay">
+                  <h3>Home Automation Products</h3>
                 </div>
               </div>
-              <div className="image-item">
+              </Link>
+              <Link to="/audio-visual" className="image-item">
                 <img src="images/home/AV solutions.png" alt="AV Solutions" />
                 <div className="image-overlay">
-                  <h3>AV Solutions</h3>
+                  <h3>AV Products</h3>
                 </div>
-              </div>
+              </Link>
             </div>
           </div>
         </div>
