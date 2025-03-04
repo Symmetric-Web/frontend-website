@@ -104,13 +104,13 @@ const Navbar = () => {
 
               <div className={`dropdown-menu ${isProductsOpen ? 'open' : ''}`}>
                 <Link to="/networking" onClick={closeMenu}>
-                  Networking Solutions
+                  Networking Products
                 </Link>
                 <Link to="/building-tech" onClick={closeMenu}>
-                  Building Technologies
+                  Building Technology Products
                 </Link>
                 <Link to="/audio-visual" onClick={closeMenu}>
-                  AV and Automation Solutions
+                  AV and Automation Products
                 </Link>
               </div>
             </div>
