@@ -62,7 +62,7 @@ function NetworkingProducts() {
       {/* Hero Title Section */}
       <section className="hero-title-section">
         <div className="container">
-          <h1>Networking Solutions</h1>
+          <h1>Networking Products</h1>
           <p className="hero-description">
             Comprehensive networking solutions that power modern enterprises. From structured cabling to advanced security systems, 
             we deliver reliable and scalable network infrastructure for businesses of all sizes.
@@ -107,7 +107,7 @@ function NetworkingProducts() {
       {/* Categories Description */}
       <section className="categories-section">
         <div className="container">
-          <h2 className="section-title">Our Networking Solutions</h2>
+          <h2 className="section-title">Our Networking Products</h2>
           <div className="categories-grid">
             <div className="category-card">
               <h3>Fiber Optic Cable & Accessories</h3>
