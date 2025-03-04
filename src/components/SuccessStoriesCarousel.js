@@ -61,7 +61,56 @@ const stories = [
         "Bohoba Restaurant"
       ]
     }
-  }
+  },
+    {
+      "id": 5,
+      "category": "Security & Access Control",
+      "title": "Boom Barrier for Traffic Control & Security",
+      "description": "Implementation of Automatic Boom Barriers with RFID and License Plate Recognition for a residential society with 500+ apartments.",
+      "image": "/images/case-studies/boom-barrier.png",
+      "details": {
+        "challenge": "Unregulated vehicle movement caused traffic congestion, manual vehicle checks led to long queues, unauthorized parking in restricted areas, and high operational costs due to manpower reliance.",
+        "solution": "Installed Automatic Boom Barriers at entry and exit points, integrated with RFID-based access control and License Plate Recognition (LPR) cameras for seamless vehicle access management.",
+        "results": "Enhanced security with only pre-registered vehicle access, 40% reduction in vehicle wait times, optimized security manpower, and prevention of unauthorized parking."
+      }
+    },
+    {
+      "id": 6,
+      "category": "Security & Access Control",
+      "title": "Flap Barrier for Pedestrian Access Control",
+      "description": "Deployment of Flap Barriers with biometric scanners and RFID card readers to regulate pedestrian access at a corporate office with 1,000+ employees and visitors daily.",
+      "image": "/images/case-studies/flap-barrier.png",
+      "details": {
+        "challenge": "Open access points made it difficult to restrict unauthorized personnel, manual ID verification caused long waiting lines, tailgating incidents compromised security, and attendance tracking inaccuracies led to payroll discrepancies.",
+        "solution": "Implemented Flap Barriers with biometric scanners, RFID card readers, and infrared sensors to detect multiple entries and prevent tailgating. Integrated the system with HR software for real-time attendance tracking.",
+        "results": "Strict access control eliminating unauthorized entries, improved employee movement efficiency, automated attendance tracking reducing payroll errors, and enhanced security with alerts for unauthorized access attempts."
+      }
+    },
+    {
+      "id": 7,
+      "category": "Security & Surveillance",
+      "title": "CCTV Surveillance System for Security Enhancement",
+      "description": "Installation of an advanced CCTV system with IP cameras, NVRs, and remote access capabilities for a commercial complex with multiple offices and retail outlets.",
+      "image": "/images/case-studies/CCTV Surveillance System.png",
+      "details": {
+        "challenge": "Lack of surveillance led to increased security breaches, unauthorized access to restricted areas, absence of real-time monitoring, and high security costs due to excessive personnel deployment.",
+        "solution": "Deployed a CCTV system with IP cameras, Network Video Recorders (NVRs), and remote access features. Prioritized high-risk zones such as cash counters, entry/exit points, and parking lots for surveillance.",
+        "results": "24/7 surveillance enabling immediate response to security threats, crime prevention due to camera presence, remote monitoring for security teams, and legal compliance with recorded footage for dispute resolution."
+      }
+    },
+    {
+      "id": 8,
+      "category": "Renewable Energy Infrastructure",
+      "title": "Implementation of SCADA, CCTV, and Fire Alarm Systems at Belectric Renewables' 100 MW Pavgad Solar Farm",
+      "description": "Deployment of SCADA connectivity, Bosch CCTV surveillance, and Bosch fire alarm systems for comprehensive monitoring, security, and safety at a 100 MW solar farm.",
+      "image": "/images/case-studies/pavgad-solar-farm.png",
+      "details": {
+        "challenge": "Remote location and infrastructure limitations, integration of multiple systems, and security and safety concerns.",
+        "solution": "Established a robust communication backbone, developed a unified platform for system interoperability, and implemented multi-layer security measures including access control and surveillance.",
+        "results": "Enhanced operational efficiency with real-time monitoring, improved security with 24/7 surveillance, increased safety compliance through an advanced fire detection system, and reduced downtime optimizing solar farm performance."
+      }
+    }
+    
 ];
 
 export const SuccessStoriesCarousel = () => {

@@ -20,7 +20,7 @@ const About = () => {
             <div className="image-content">
               <div className="image-wrapper">
                 <img src="/images/about us/Meeting.png" alt="About Symmetric IT" />
-                <div className="shape-overlay"></div>
+                {/* <div className="shape-overlay"></div> */}
                 <div className="dots-overlay"></div>
               </div>
             </div>
@@ -98,9 +98,9 @@ const About = () => {
 
             <div className="process-item">
               <div className="process-icon">
-                <img src="/images/about us/process/signoff and handover.png" alt="signoff and handover" />
+                <img src="/images/about us/process/signoff and handover.png" alt="Sign-off & Handover" />
               </div>
-              <h3>Delivery & Handover</h3>
+              <h3>Sign-off & Handover</h3>
             </div>
 
             
@@ -155,4 +155,4 @@ const About = () => {
   );
 };
 
-export default About; 
+export default About;
