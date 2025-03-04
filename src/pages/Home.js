@@ -3,7 +3,8 @@ import { Link } from 'react-router-dom';
 import './Home.css';
 import { SuccessStoriesCarousel } from '../components/SuccessStoriesCarousel';
 import { motion, AnimatePresence } from 'framer-motion';
-import CardStack from '../components/CardStack';
+import Testimonials from '../components/Testimonials';
+
 
 // Team members data
 const teamMembers = [
@@ -327,64 +328,13 @@ function Home() {
       
 
       {/* Client Testimonials Section */}
-      <div className="container">
-          <h2 className="section-title">Client Testimonials</h2>
-          <div className="testimonials-grid">
-            <CardStack />
-         
-          </div>
-        </div>
-
-
-
-      
-      {/* <section className="client-testimonials">
+      <section className="success-stories">
         <div className="container">
           <h2 className="section-title">Client Testimonials</h2>
-          <div className="testimonials-grid">
-            <div className="testimonial-card">
-              <div className="testimonial-content">
-                <p>We are highly impressed with Symmetric's exceptional expertise in aerial fiber network design and deployment. Their meticulous planning, technical proficiency, and unwavering commitment to excellence have been remarkable. The team's ability to execute complex projects with precision and efficiency has significantly contributed to seamless connectivity and operational success.</p>
-                <p>Symmetric's dedication to quality and innovation sets them apart, making them a trusted partner in network infrastructure development. We truly appreciate their outstanding work and look forward to continued collaboration.</p>
-              </div>
-              <div className="testimonial-author">
-                <h4>Mr. Kumaran</h4>
-                <p>GE Renewables</p>
-              </div>
-            </div>
-
-            <div className="testimonial-card">
-              <div className="testimonial-content">
-                <p>Everyone at Symmetric was highly professional in all areas. I rate them at the highest level for my overall experience and would confidently recommend them to my friends and colleagues. Their automation control products and services have exceeded my expectations, seamlessly integrating into my home, commercial offices, and resort.</p>
-                <p>Symmetric's commitment to quality, innovation, and customer satisfaction makes them a trusted choice for automation solutions. I truly appreciate their expertise and dedication.</p>
-              </div>
-              <div className="testimonial-author">
-                <h4>Satisfied Client</h4>
-              </div>
-            </div>
-
-            <div className="testimonial-card">
-              <div className="testimonial-content">
-                <p>We are extremely impressed with Symmetric's efficiency and professionalism in delivering our physical security solutions. Their team successfully implemented flap barriers, access control, ANPR camera-based boom barriers, and a comprehensive CCTV system at our premises within just 15 days of order receipt. Their commitment to quality and timely execution is truly commendable.</p>
-              </div>
-              <div className="testimonial-author">
-                <h4>Dhirender</h4>
-                <p>Chintamani Group</p>
-              </div>
-            </div>
-
-            <div className="testimonial-card">
-              <div className="testimonial-content">
-                <p>We are extremely pleased with the high-quality dimming solutions, access control, fire alarm, and fire sprinkler systems provided by Symmetric across all our restaurants. Their commitment to excellence, timely service, and adherence to high standards have been impressive. Their support and customer service are also commendable, making them a reliable partner for our business.</p>
-              </div>
-              <div className="testimonial-author">
-                <h4>Inderjit Singh Vacchar</h4>
-                <p>Pizza Express</p>
-              </div>
-            </div>
-          </div>
+          <Testimonials />
         </div>
-      </section> */}
+      </section>
+     
 
     </div>
   );
