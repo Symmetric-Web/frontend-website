@@ -69,7 +69,7 @@ const Footer = () => {
 
       <div className="footer-bottom">
         <div className="footer-branding">
-          <img src="/images/Logo/Symm Logo.png" alt="Symmetric IT Services" className="footer-logo" />
+          <img src="/images/Logo/Symm Logo.webp" alt="Symmetric IT Services" className="footer-logo" loading="lazy" width="200" height="60" />
           <p className="footer-tagline">
             We Help Companies To Build Their<br />
             <span className="highlight">Technology Infrastructure And Provide</span>
@@ -125,4 +125,4 @@ const Footer = () => {
   );
 };
 
-export default Footer; 
+export default Footer;

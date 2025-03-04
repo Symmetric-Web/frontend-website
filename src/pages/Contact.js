@@ -20,7 +20,7 @@ const Contact = () => {
             </p>
           </div>
           <div className="contact-image">
-            <img src="/images/Contact us.png" alt="Contact Us" />
+            <img src="/images/Contact us.webp" alt="Contact Us" loading="eager" width="800" height="400" />
           </div>
         </div>
       </div>
@@ -28,4 +28,4 @@ const Contact = () => {
   );
 };
 
-export default Contact; 
+export default Contact;

@@ -75,9 +75,12 @@ function NetworkingProducts() {
         <div className="grid-container">
           <div className="grid-item">
             <img 
-              src="/images/networking/Scada network center.png" 
+              src="/images/networking/Scada network center.webp" 
               alt="Network Infrastructure"
               className="grid-image"
+              loading="lazy"
+              width="400"
+              height="300"
             />
           </div>
           <div className="grid-item">
@@ -85,20 +88,29 @@ function NetworkingProducts() {
               src="/images/networking/servers.webp" 
               alt="Server Room"
               className="grid-image"
+              loading="lazy"
+              width="400"
+              height="300"
             />
           </div>
           <div className="grid-item">
             <img 
-              src="/images/networking/fire solutions.jpg" 
+              src="/images/networking/fire solutions.webp" 
               alt="Network Cables"
               className="grid-image"
+              loading="lazy"
+              width="400"
+              height="300"
             />
           </div>
           <div className="grid-item">
             <img 
-              src="/images/networking/cctv.jpg" 
+              src="/images/networking/cctv.webp" 
               alt="Data Center"
               className="grid-image"
+              loading="lazy"
+              width="400"
+              height="300"
             />
           </div>
         </div>
@@ -256,4 +268,4 @@ function NetworkingProducts() {
   );
 }
 
-export default NetworkingProducts; 
+export default NetworkingProducts;

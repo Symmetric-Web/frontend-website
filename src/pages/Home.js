@@ -10,7 +10,7 @@ const teamMembers = [
     id: 1,
     name: "Suresh Kamath",
     position: "Founder and Director",
-    image: "images/team/Suresh Kamath.png",
+    image: "images/team/Suresh Kamath.webp",
     description: "32+ years of experience in Data Networks",
     expandedDescription: `Mr. Suresh Kamath is a seasoned professional with over 32 years of experience in the field of Data Networks. He holds a Bachelor of Engineering in Electronics & Communication, achieved with first-class honors, along with a Diploma in Electronics and Telecommunication. Additionally, he is a Cisco Certified Network Associate (CCNA) and Cisco Certified Network Professional (CCNP).
 
@@ -115,25 +115,25 @@ function Home() {
           <div className="hero-images">
             <div className="image-grid">
               <div className="image-item">
-                <img src="/images/home/Networking.png" alt="Networking" />
+                <img src="/images/home/Networking.webp" alt="Networking" loading="lazy" width="400" height="300" />
                 <div className="image-overlay">
                   <h3>Networking Solutions</h3>
                 </div>
               </div>
               <div className="image-item">
-                <img src="images/home/Building Technology.png" alt="Building Tech" />
+                <img src="images/home/Building Technology.webp" alt="Building Tech" loading="lazy" width="400" height="300" />
                 <div className="image-overlay">
                   <h3>Building Technologies</h3>
                 </div>
               </div>
               <div className="image-item">
-                <img src="images/home/home automation.jpeg" alt="Automation" />
+                <img src="images/home/home automation.webp" alt="Automation" loading="lazy" width="400" height="300" />
                 <div className="image-overlay">
                   <h3>Home Automation</h3>
                 </div>
               </div>
               <div className="image-item">
-                <img src="images/home/AV solutions.png" alt="AV Solutions" />
+                <img src="images/home/AV solutions.webp" alt="AV Solutions" loading="lazy" width="400" height="300" />
                 <div className="image-overlay">
                   <h3>AV Solutions</h3>
                 </div>
@@ -151,7 +151,7 @@ function Home() {
                 <p>At Symmetric IT Services, we're committed to delivering cutting-edge technology solutions. As a pioneering force in the IT sector, we've been at the forefront of digital transformation. Our mission is simple yet profound: to create innovative solutions that empower businesses to thrive in the digital age.</p>
               </div>
               <div className="about-logo">
-                <img src="/images/logo/Symm Logo.png" alt="Symmetric IT Services Logo" />
+                <img src="/images/logo/Symm Logo.webp" alt="Symmetric IT Services Logo" loading="lazy" width="200" height="60" />
               </div>
             </div>
           </div>
@@ -165,7 +165,7 @@ function Home() {
           <div className="services-grid">
             <Link to="/networking" className="service-card">
               <div className="service-image">
-                <img src="/images/home/Services/Networking Solutions.png" alt="Networking Solutions" />
+                <img src="/images/home/Services/Networking Solutions.webp" alt="Networking Solutions" loading="lazy" width="400" height="300" />
               </div>
               <div className="service-content">
                 <h3>Networking Solutions</h3>
@@ -175,7 +175,7 @@ function Home() {
             </Link>
             <Link to="/building-tech" className="service-card">
               <div className="service-image">
-                <img src="/images/home/Services/Building Technologies.png" alt="Building Technologies" />
+                <img src="/images/home/Services/Building Technologies.webp" alt="Building Technologies" loading="lazy" width="400" height="300" />
               </div>
               <div className="service-content">
                 <h3>Building Technologies</h3>
@@ -185,7 +185,7 @@ function Home() {
             </Link>
             <Link to="/audio-visual" className="service-card">
               <div className="service-image">
-                <img src="/images/home/Services/Audio-Visual and Automation Solutions.png" alt="Audio-Visual Solutions" />
+                <img src="/images/home/Services/Audio-Visual and Automation Solutions.webp" alt="Audio-Visual Solutions" loading="lazy" width="400" height="300" />
               </div>
               <div className="service-content">
                 <h3>AV and Automation Solutions</h3>
@@ -326,4 +326,4 @@ function Home() {
   );
 }
 
-export default Home; 
+export default Home;

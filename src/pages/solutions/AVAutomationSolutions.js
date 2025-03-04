@@ -183,7 +183,7 @@ const AVAutomationSolutions = () => {
       category: "ENERGY",
       title: "Energy Conservation",
       description: "Rising energy costs are impacting profitability and sustainability, making it essential to adopt smarter power usage habits and choices for a greener future. Symmetric IT Services offers LEED-compliant solutions to help monitor, optimize, and reduce energy consumption.",
-      image: "./images/Solutions/AV and Automation Solution/Luxury Home/Energy Conservation.png",
+      image: "./images/Solutions/AV and Automation Solution/Luxury Home/Energy Conservation.webp",
       details: [
         {
           title: "Key Features",
@@ -229,7 +229,7 @@ const AVAutomationSolutions = () => {
       category: "ENTERTAINMENT",
       title: "Home Theatres",
       description: "Digital content has transformed the way we entertain ourselves at home. But to make the most of this content, we need to experience it on a movie cinema like scale with a home theatre system. We help you recreate this experience in your own home with elements like a central media library, multi-room audio and very large screen home cinemas, tailored to your unique preferences.",
-      image: "./images/Solutions/AV and Automation Solution/Luxury Home/Home Theatres.png",
+      image: "./images/Solutions/AV and Automation Solution/Luxury Home/Home Theatres.webp",
       details: [
         {
           title: "Key Features",
@@ -278,7 +278,7 @@ const AVAutomationSolutions = () => {
         category: "AUTOMATION",
         title: "Lighting and Smart Controls",
         description: "Intelligent lighting and automation systems can significantly enhance both work and living spaces by creating the right atmosphere or adjusting environmental factors automatically. These systems combine sensors with an integrated control platform to manage and automate spaces such as rooms, offices, homes, buildings, or campuses.",
-        image: "./images/Solutions/AV and Automation Solution/Luxury Home/Lighting & Automation.png",
+        image: "./images/Solutions/AV and Automation Solution/Luxury Home/Lighting & Automation.webp",
         details: [
           {
             title: "Key Features",
@@ -441,7 +441,7 @@ const AVAutomationSolutions = () => {
       category: "CONTROL",
       title: "Command Centre Solution",
       description: "Businesses and organizations require a central hub to monitor, control, and manage various systems—security, operations, or communications-efficiently and in real-time. Our Command Centre solution integrates various systems into a unified platform for real-time monitoring and decision-making.",
-      image: "./images/Solutions/AV and Automation Solution/Network Control and Automation/Command Centre .jpeg",
+      image: "./images/Solutions/AV and Automation Solution/Network Control and Automation/Command Centre .webp",
       details: [
         {
           title: "Key Features",
@@ -502,7 +502,7 @@ const AVAutomationSolutions = () => {
       category: "CONTROL",
       title: "Operations Centres",
       description: "Audio-visual technology is crucial in control and monitoring environments where swiftly identifying and resolving issues is vital. It significantly impacts centralized operations centers, such as Network Operation Centers (NOCs), Security Operation Centers (SOCs), or crisis management applications, by enhancing the management of critical networks and physical infrastructure.",
-      image: "./images/Solutions/AV and Automation Solution/Network Control and Automation/Operations Centres.png",
+      image: "./images/Solutions/AV and Automation Solution/Network Control and Automation/Operations Centres.webp",
       details: [
         {
           title: "Key Features",
@@ -554,7 +554,7 @@ const AVAutomationSolutions = () => {
       category: "AUDITORIUM",
       title: "Auditorium Solution",
       description: "Redefining the auditorium AV experience enhances both large conferences and intimate gatherings. Key elements include ambiance, lighting, sound, and comfortable seating, engaging audiences through various sensory touchpoints.",
-      image: "./images/Solutions/AV and Automation Solution/Video Collaboration/Auditorium Solution.png",
+      image: "./images/Solutions/AV and Automation Solution/Video Collaboration/Auditorium Solution.webp",
       details: [
         {
           title: "Key Features",
@@ -617,7 +617,7 @@ const AVAutomationSolutions = () => {
       category: "TRAINING",
       title: "AV Integrated Training Rooms",
       description: "Make training sessions more effective, accessible, and affordable with advanced technology-enabled training rooms from Symmetric IT Services. Training is essential for every organization, and achieving Learning and Development goals requires modern AV technology.",
-      image: "./images/Solutions/AV and Automation Solution/Video Collaboration/AV Integrated Training Room.png",
+      image: "./images/Solutions/AV and Automation Solution/Video Collaboration/AV Integrated Training Room.webp",
       details: [
         {
           title: "Key Benefits",
@@ -658,7 +658,7 @@ const AVAutomationSolutions = () => {
       category: "CONFERENCE",
       title: "Boardroom / Conference Rooms",
       description: "Boardrooms and conference rooms are essential spaces where teams brainstorm, discuss ideas, negotiate, and strategize the way forward. These rooms are designed to foster seamless communication, connection, and collaboration—essential for helping teams achieve more together.",
-      image: "./images/Solutions/AV and Automation Solution/Video Collaboration/Boardroom_Conference Rooms.png",
+      image: "./images/Solutions/AV and Automation Solution/Video Collaboration/Boardroom_Conference Rooms.webp",
       details: [
         {
           title: "Modern Collaboration Features",
@@ -1027,7 +1027,7 @@ const AVAutomationSolutions = () => {
       category: "PROJECTOR",
       title: "Projector Solution",
       description: "Customers need high-quality, reliable projectors for business, education, or home use, with easy integration into existing systems. Our projectors deliver bright, sharp images with customizable features for various settings.",
-      image: "./images/Solutions/AV and Automation Solution/Visual Solutions/projector solutions.png",
+      image: "./images/Solutions/AV and Automation Solution/Visual Solutions/projector solutions.webp",
       details: [
         {
           title: "Key Features",
@@ -1076,7 +1076,6 @@ const AVAutomationSolutions = () => {
       ]
     }
   ];
-
   const categories = [
     {
       className: "av-automation",
@@ -1088,7 +1087,6 @@ const AVAutomationSolutions = () => {
       ]
     }
   ];
-
   return (
     <div className="solutions-container">
       {categories.map((category, categoryIndex) => (
@@ -1105,4 +1103,4 @@ const AVAutomationSolutions = () => {
   );
 };
 
-export default AVAutomationSolutions; 
+export default AVAutomationSolutions;

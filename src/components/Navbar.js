@@ -29,7 +29,7 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="navbar-container">
         <Link to="/" className="navbar-logo" onClick={closeMenu}>
-          <img src="/images/Logo/Symm Logo.png" alt="Symmetric IT Services" />
+          <img src="/images/Logo/Symm Logo.webp" alt="Symmetric IT Services" loading="eager" width="200" height="60" />
         </Link>
 
         {/* Desktop Navigation */}
@@ -155,4 +155,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar; 
+export default Navbar;

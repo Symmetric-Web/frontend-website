@@ -8,7 +8,7 @@ const stories = [
     category: "Infrastructure",
     title: "HTMS Network Implementation for EFKON",
     description: "Highway Traffic Management System implementation across major Indian highways",
-    image: "/images/case-studies/Bandra Worli Sealink.png",
+    image: "/images/case-studies/Bandra Worli Sealink.webp",
     details: {
       challenge: "The project aimed to enhance the control and operation of various traffic management systems, ensuring efficient traffic flow and improved safety on major highways in India. Key locations included Bandra-Worli Link Road and Hosur Road Highway.",
       solution: "Implementation of advanced technologies including Automation Traffic Counter cum Classifier (ATCC), CCTV, Emergency Communication System (ECS), Meteorological Stations (METs), Network Management System (NMS), and Variable Message Signs (VMS). The solution utilized Finolex Fibre Optic Cable and HP switches for reliable connectivity.",
@@ -20,7 +20,7 @@ const stories = [
     category: "Security",
     title: "E-Fencing with CCTV Integration for Indian Navy",
     description: "First e-fencing project integrated with CCTV for the Indian Navy in Vishakhapatnam",
-    image: "/images/case-studies/E-Fencing with CCTV .png",
+    image: "/images/case-studies/E-Fencing with CCTV .webp",
     details: {
       challenge: "The project needed to provide enhanced security measures around critical naval installations while ensuring real-time monitoring and comprehensive coverage of the designated area.",
       solution: "Deployment of NEMTEK E-fencing energizers, Finolex Fibre Optic Cables, and GE CCTV cameras integrated with HP switches for seamless connectivity. The system provides real-time alerts and monitoring capabilities.",
@@ -32,7 +32,7 @@ const stories = [
     category: "Connectivity",
     title: "Aerial Fiber Cable Erection for Wind Farms",
     description: "25,000 km of aerial ADSS fiber cable connectivity across wind farms in India",
-    image: "/images/case-studies/wind-farms.jpeg",
+    image: "/images/case-studies/wind-farms.webp",
     details: {
       challenge: "The project required establishing robust communication networks between wind turbines while withstanding high wind speeds and environmental challenges.",
       solution: "Implementation of specialized Finolex ADSS cable, industrial switches, and Hikvision IP CCTV cameras, creating an integrated network for data transmission and surveillance.",
@@ -44,7 +44,7 @@ const stories = [
     category: "Automation",
     title: "Lighting Automation for Resto-Bars",
     description: "Smart lighting solutions for premium restaurants and bars across India",
-    image: "/images/case-studies/resto-bars.png",
+    image: "/images/case-studies/resto-bars.webp",
     details: {
       challenge: "The project needed to design, supply, and deploy comprehensive lighting automation and dimming solutions that would create captivating ambiances centered around unique themes for each establishment.",
       solution: "Implementation of sophisticated lighting solutions including multi-dimming scenes, strategic light highlighting, LED fixtures with adjustable brightness, and advanced dimming controllers.",
@@ -202,4 +202,4 @@ export const SuccessStoriesCarousel = () => {
       </AnimatePresence>
     </div>
   );
-}; 
+};

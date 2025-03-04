@@ -9,7 +9,7 @@ const BuildingTechnologyProducts = () => {
       <br />
       <section className="hero-section">
         <h2>Building Technology Products</h2>
-        <img src="/images/products/building technology products/home.png" alt="Building Technology Products" />
+        <img src="/images/products/building technology products/home.webp" alt="Building Technology Products" loading="eager" width="800" height="400" />
         
       </section>
 
@@ -37,8 +37,11 @@ const BuildingTechnologyProducts = () => {
             </div>
             <div className="product-image-wrapper">
               <img 
-                src="/images/products/building technology products/2_access control and time attendance.png" 
+                src="/images/products/building technology products/2_access control and time attendance.webp" 
                 alt="Access Control" 
+                loading="lazy"
+                width="600"
+                height="400"
               />
               <div className="shape-overlay"></div>
               <div className="dots-overlay"></div>
@@ -71,8 +74,11 @@ const BuildingTechnologyProducts = () => {
             </div>
             <div className="product-image-wrapper">
               <img 
-                src="/images/products/building technology products/3_ip cctv.png" 
+                src="/images/products/building technology products/3_ip cctv.webp" 
                 alt="IP CCTV" 
+                loading="lazy"
+                width="600"
+                height="400"
               />
               <div className="shape-overlay"></div>
               <div className="dots-overlay"></div>
@@ -105,8 +111,11 @@ const BuildingTechnologyProducts = () => {
             </div>
             <div className="product-image-wrapper">
               <img 
-                src="/images/products/building technology products/4_fire safety systems.png" 
+                src="/images/products/building technology products/4_fire safety systems.webp" 
                 alt="Fire Safety" 
+                loading="lazy"
+                width="600"
+                height="400"
               />
               <div className="shape-overlay"></div>
               <div className="dots-overlay"></div>
@@ -139,8 +148,11 @@ const BuildingTechnologyProducts = () => {
             </div>
             <div className="product-image-wrapper">
               <img 
-                src="/images/products/building technology products/5_public addressal systems.png" 
+                src="/images/products/building technology products/5_public addressal systems.webp" 
                 alt="Communication Systems" 
+                loading="lazy"
+                width="600"
+                height="400"
               />
               <div className="shape-overlay"></div>
               <div className="dots-overlay"></div>
@@ -181,8 +193,11 @@ const BuildingTechnologyProducts = () => {
             </div>
             <div className="product-image-wrapper">
               <img 
-                src="/images/products/building technology products/6_security solutions.png" 
+                src="/images/products/building technology products/6_security solutions.webp" 
                 alt="Security Solutions" 
+                loading="lazy"
+                width="600"
+                height="400"
               />
               <div className="shape-overlay"></div>
               <div className="dots-overlay"></div>
@@ -214,8 +229,11 @@ const BuildingTechnologyProducts = () => {
             </div>
             <div className="product-image-wrapper">
               <img 
-                src="/images/products/building technology products/7_facility protection.png" 
+                src="/images/products/building technology products/7_facility protection.webp" 
                 alt="Facility Protection" 
+                loading="lazy"
+                width="600"
+                height="400"
               />
               <div className="shape-overlay"></div>
               <div className="dots-overlay"></div>
@@ -227,4 +245,4 @@ const BuildingTechnologyProducts = () => {
   );
 };
 
-export default BuildingTechnologyProducts; 
+export default BuildingTechnologyProducts;

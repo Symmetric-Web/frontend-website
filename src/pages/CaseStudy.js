@@ -121,7 +121,7 @@ const CaseStudy = () => {
       title: "HTMS Network Implementation for EFKON",
       shortDescription: "Highway Traffic Management System implementation across major Indian highways",
       description: "Symmetric IT Services Pvt Ltd successfully designed, supplied, and executed the Highway Traffic Management System (HTMS) network for EFKON, a leading European company specializing in intelligent traffic management solutions.",
-      imageUrl: "./images/case-studies/Bandra Worli Sealink.png",
+      imageUrl: "./images/case-studies/Bandra Worli Sealink.webp",
       details: {
         challenge: "The project aimed to enhance the control and operation of various traffic management systems, ensuring efficient traffic flow and improved safety on major highways in India. Key locations included Bandra-Worli Link Road and Hosur Road Highway.",
         solution: "Implementation of advanced technologies including Automation Traffic Counter cum Classifier (ATCC), CCTV, Emergency Communication System (ECS), Meteorological Stations (METs), Network Management System (NMS), and Variable Message Signs (VMS). The solution utilized Finolex Fibre Optic Cable and HP switches for reliable connectivity.",
@@ -133,7 +133,7 @@ const CaseStudy = () => {
       title: "E-Fencing with CCTV Integration for Indian Navy",
       shortDescription: "First e-fencing project integrated with CCTV for the Indian Navy in Vishakhapatnam",
       description: "Implementation of an innovative security solution combining advanced electronic fencing technology with real-time surveillance capabilities, covering an extensive area of 8 km around critical naval installations.",
-      imageUrl: "./images/case-studies/E-Fencing with CCTV .png",
+      imageUrl: "./images/case-studies/E-Fencing with CCTV .webp",
       details: {
         challenge: "The project needed to provide enhanced security measures around critical naval installations while ensuring real-time monitoring and comprehensive coverage of the designated area.",
         solution: "Deployment of NEMTEK E-fencing energizers, Finolex Fibre Optic Cables, and GE CCTV cameras integrated with HP switches for seamless connectivity. The system provides real-time alerts and monitoring capabilities.",
@@ -145,7 +145,7 @@ const CaseStudy = () => {
       title: "Aerial Fiber Cable Erection for Wind Farms",
       shortDescription: "25,000 km of aerial ADSS fiber cable connectivity across wind farms in India",
       description: "Design and execution of extensive aerial fiber cable network connecting wind turbines, supporting major companies like GE, Nodex, Enercon, and Envision in the renewable energy sector.",
-      imageUrl: "./images/case-studies/wind-farms.jpeg",
+      imageUrl: "./images/case-studies/wind-farms.webp",
       details: {
         challenge: "The project required establishing robust communication networks between wind turbines while withstanding high wind speeds and environmental challenges.",
         solution: "Implementation of specialized Finolex ADSS cable, industrial switches, and Hikvision IP CCTV cameras, creating an integrated network for data transmission and surveillance.",
@@ -157,7 +157,7 @@ const CaseStudy = () => {
       title: "Campus Networking for Industrial Factories",
       shortDescription: "Comprehensive networking solutions for major industrial facilities",
       description: "Implementation of campus-wide networking solutions for prominent industrial factories including JSW Vadkal, Maharashtra Seamless Steel, Supreme Petrochemicals Ltd, and Mukand Steels.",
-      imageUrl: "./images/case-studies/campus-network.png",
+      imageUrl: "./images/case-studies/campus-network.webp",
       details: {
         challenge: "The projects needed to establish reliable connectivity and efficient data networks through structured cabling and fiber optic cable construction across large industrial campuses.",
         solution: "Deployment of structured cabling systems, Finolex fiber optic cables, and Cisco switches, creating comprehensive network infrastructures tailored to each facility's needs.",
@@ -169,7 +169,7 @@ const CaseStudy = () => {
       title: "Lighting Automation/Dimming Solution for Resto-Bars",
       shortDescription: "Smart lighting solutions for premium restaurants and bars across India",
       description: "Symmetric IT Services partnered with several renowned resto-bars, including Episode One, Barish, Hitchki, The Glass House, Pizza Express (BKC), Copper Chimney, Mainland China, Foo Restaurant, and Bohoba Restaurant to enhance customer experience through innovative lighting solutions.",
-      imageUrl: "./images/case-studies/resto-bars.png",
+      imageUrl: "./images/case-studies/resto-bars.webp",
       details: {
         challenge: "The project needed to design, supply, and deploy comprehensive lighting automation and dimming solutions that would create captivating ambiances centered around unique themes for each establishment. The system needed to adapt to different times of the day and various customer moods.",
         solution: `Implementation of sophisticated lighting solutions including:
@@ -188,39 +188,39 @@ const CaseStudy = () => {
       locations: [
         {
           name: "Episode One Smart Restobar",
-          image: "./images/case-studies/resto-bars/episode-one.png"
+          image: "./images/case-studies/resto-bars/episode-one.webp"
         },
         {
           name: "Barish Smart Restobar",
-          image: "./images/case-studies/resto-bars/barish.png"
+          image: "./images/case-studies/resto-bars/barish.webp"
         },
         {
           name: "Hitchki Smart Restobar",
-          image: "./images/case-studies/resto-bars/hitchki.png"
+          image: "./images/case-studies/resto-bars/hitchki.webp"
         },
         {
           name: "The Glass House Smart Restaurant",
-          image: "./images/case-studies/resto-bars/glass-house.png"
+          image: "./images/case-studies/resto-bars/glass-house.webp"
         },
         {
           name: "Pizza Express (BKC)",
-          image: "./images/case-studies/resto-bars/pizza-express.jpeg"
+          image: "./images/case-studies/resto-bars/pizza-express.webp"
         },
         {
           name: "Copper Chimney",
-          image: "./images/case-studies/resto-bars/copper-chimney.jpeg"
+          image: "./images/case-studies/resto-bars/copper-chimney.webp"
         },
         {
           name: "Mainland China",
-          image: "./images/case-studies/resto-bars/mainland-china.jpeg"
+          image: "./images/case-studies/resto-bars/mainland-china.webp"
         },
         {
           name: "Foo Restaurant",
-          image: "./images/case-studies/resto-bars/foo.jpeg"
+          image: "./images/case-studies/resto-bars/foo.webp"
         },
         {
           name: "Bohoba Restaurant",
-          image: "./images/case-studies/resto-bars/bohoba.jpeg"
+          image: "./images/case-studies/resto-bars/bohoba.webp"
         }
       ]
     }
@@ -308,4 +308,4 @@ const textVariants = {
   right: { x: 20, opacity: 1 },
 };
 
-export default CaseStudy; 
+export default CaseStudy;
