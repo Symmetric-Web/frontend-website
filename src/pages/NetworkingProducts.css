@@ -301,9 +301,13 @@ p {
 }
 
 .product-content h3 {
-  font-size: 1.25rem;
+  font-size: 1rem;
   color: #333;
   margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
 }
 
 .product-content p {
@@ -502,4 +506,4 @@ p {
   .full-description {
     font-size: 1rem;
   }
-} 
+}

@@ -102,7 +102,7 @@ function Home() {
         <div className="hero-content">
           <div className="hero-text">
             <div className="logo-small">Powering Tomorrow</div>
-            <h1>SYMMETRIC IT<br /> SERVICES PVT LTD</h1>
+            <h1>SYMMETRIC IT<br /> SERVICES Pvt. Ltd.</h1>
             <p className="hero-description">
               Our commitment to innovative technology solutions is paving the way for a smarter, 
               more connected future. Join us on a journey towards transforming the way businesses operate.
