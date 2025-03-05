@@ -1,10 +1,3 @@
 {
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/" }
-  ],
-  "routes": [
-    { "handle": "filesystem" },
-    { "src": "/(.*)", "dest": "/" }
-  ],
-  "cleanUrls": true
+  "rewrites": [{ "source": "/(.*)", "destination": "/" }]
 }
