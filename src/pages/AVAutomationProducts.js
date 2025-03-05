@@ -226,7 +226,13 @@ function AVAutomationProducts() {
                   >
                     {product.imageUrl && (
                       <div className="product-image">
-                        <img src={product.imageUrl} alt={product.name} />
+                        <img 
+                          src={product.imageUrl} 
+                          alt={product.name} 
+                          loading="lazy"
+                          width="100%"
+                          height="100%"
+                        />
                       </div>
                     )}
                     <div className="product-content">
@@ -270,7 +276,13 @@ function AVAutomationProducts() {
                   <h2>{selectedProduct.name}</h2>
                   {selectedProduct.imageUrl && (
                     <div className="modal-image">
-                      <img src={selectedProduct.imageUrl} alt={selectedProduct.name} />
+                      <img 
+                        src={selectedProduct.image} 
+                        alt={selectedProduct.title} 
+                        loading="lazy"
+                        width="100%"
+                        height="100%"
+                      />
                     </div>
                   )}
                 </div>

@@ -164,11 +164,18 @@ export const SuccessStoriesCarousel = () => {
                   <h3 className="card-title">{story.title}</h3>
                   <p className="card-description">{story.description}</p>
                 </div>
-                <img 
-                  src={story.image} 
-                  alt={story.title}
-                  className="card-image"
-                />
+                <picture>
+                  <source srcSet={story.image.replace('.png', '.webp').replace('.jpeg', '.webp')} type="image/webp" />
+                  <source srcSet={story.image.replace('.png', '.avif').replace('.jpeg', '.avif')} type="image/avif" />
+                  <img 
+                    src={story.image} 
+                    alt={story.title}
+                    className="card-image"
+                    loading="lazy"
+                    width="100%"
+                    height="100%"
+                  />
+                </picture>
               </div>
             </motion.div>
           ))}
@@ -251,4 +258,4 @@ export const SuccessStoriesCarousel = () => {
       </AnimatePresence>
     </div>
   );
-}; 
+};
