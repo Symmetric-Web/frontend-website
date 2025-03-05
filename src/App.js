@@ -7,7 +7,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import NetworkingProducts from './pages/NetworkingProducts';
 import BuildingTechnologyProducts from './pages/BuildingTechnologyProducts';
-import AudioVisual from './pages/AudioVisual';
+import AVAutomationProducts from './pages/AVAutomationProducts';
 import Contact from './pages/Contact';
 import CaseStudy from './pages/CaseStudy';
 import Blog from './pages/Blog';
@@ -26,7 +26,7 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/networking" element={<NetworkingProducts />} />
             <Route path="/building-tech" element={<BuildingTechnologyProducts />} />
-            <Route path="/audio-visual" element={<AudioVisual />} />
+            <Route path="/audio-visual" element={<AVAutomationProducts />} />
             <Route path="/solutions" element={<Solutions />} />
             <Route path="/case-study" element={<CaseStudy />} />
             <Route path="/blog" element={<Blog />} />

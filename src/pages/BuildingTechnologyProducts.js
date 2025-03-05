@@ -110,17 +110,17 @@ const BuildingTechnologyProducts = () => {
                 integration and advanced monitoring capabilities.
               </p>
               <div className="features-grid">
-                <div  onClick={() => {
-                setSelectedType('Access Control & Time attendence');
-                document.querySelector('.products-section').scrollIntoView({ behavior: 'smooth' });
-              }} style={{ cursor: 'pointer' }} className="feature-card">
+                <div onClick={() => {
+                  setSelectedType('Access Control & Time attendence');
+                  document.querySelector('.products-section').scrollIntoView({ behavior: 'smooth' });
+                }} style={{ cursor: 'pointer' }} className="feature-card">
                   <h3>Access Control Systems</h3>
                   <p>Comprehensive access management solutions for enhanced security</p>
                 </div>
-                <div   onClick={() => {
-                setSelectedType('Access Control & Time attendence');
-                document.querySelector('.products-section').scrollIntoView({ behavior: 'smooth' });
-              }} style={{ cursor: 'pointer' }}className="feature-card">
+                <div onClick={() => {
+                  setSelectedType('Access Control & Time attendence');
+                  document.querySelector('.products-section').scrollIntoView({ behavior: 'smooth' });
+                }} style={{ cursor: 'pointer' }} className="feature-card">
                   <h3>Time Attendance Systems</h3>
                   <p>Advanced time tracking and attendance management solutions</p>
                 </div>
