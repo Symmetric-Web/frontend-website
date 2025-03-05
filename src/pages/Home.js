@@ -53,9 +53,9 @@ const teamMembers = [
   {
     id: 3,
     name: "Devendra More",
-    position: "Pre Sales and Project Management",
+    position: "Head- Pre Sales and Configuration",
     image: "/images/team/Devendra.png",
-    description: "Project Execution",
+    description: "Technical",
     expandedDescription: `Mr.Devendra More is the Technical Manager at Symmetric IT Services Pvt. Ltd., with over 15 years of experience in designing and implementing advanced technology solutions. Holding a B.Sc. in Electronics, he brings deep knowledge and expertise to every project he handles.
 
     Devendra specializes in creating and managing IP and CCTV Networks, ensuring they are reliable, efficient, and tailored to meet client needs. He has also designed large-scale systems such as Building Management Systems (BMS), Fire Alarm Systems (FAS), audio-visual solutions, and home automation systems, making spaces safer, smarter, and more efficient.
@@ -215,7 +215,7 @@ function Home() {
                 className="director-photo"
               />
               <h3>Suresh Kamath</h3>
-              <p className="director-title">Director, Symmetric IT Pvt Ltd</p>
+              <p className="director-title">Director, Symmetric IT Services Pvt Ltd</p>
             </div>
             <div className="message-content">
               <p className="intro">
