@@ -27,7 +27,15 @@ function NetworkingProducts() {
     setError(null);
     try {
       console.log("Making API call to: http://127.0.0.1:5002/data_get");
-      const response = await fetch('http://127.0.0.1:5002/data_get');
+      const response = await fetch('https://productsbackend-606484914740.asia-south1.run.app/get_products', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          product_type: "Networking Products"
+        })
+      });
       console.log("API Response status:", response.status);
       console.log("API Response headers:", response.headers);
       
