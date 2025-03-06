@@ -18,6 +18,24 @@ const Contact = () => {
               Reach out to us today and let's discuss how we can help transform your 
               business with our innovative technology solutions.
             </p>
+            <div className="contact-buttons">
+              <button className="contact-button join-team">
+                Join Our Team
+                <span className="button-description">Explore Career Opportunities</span>
+              </button>
+              <button 
+                className="contact-button customer-support"
+                onClick={() => {
+                  const contactForm = document.querySelector('.contact-form-section');
+                  if (contactForm) {
+                    contactForm.scrollIntoView({ behavior: 'smooth' });
+                  }
+                }}
+              >
+                Customer Support
+                <span className="button-description">Get Help with Our Products</span>
+              </button>
+            </div>
           </div>
           <div className="contact-image">
             <img src="/images/Contact us.png" alt="Contact Us" />
@@ -28,4 +46,4 @@ const Contact = () => {
   );
 };
 
-export default Contact; 
+export default Contact;

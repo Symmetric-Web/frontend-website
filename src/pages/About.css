@@ -22,6 +22,7 @@
 
 .text-content {
   padding-right: 20px;
+  padding-left: 0;
   max-width: 100%;
   box-sizing: border-box;
 }
@@ -29,7 +30,8 @@
 @media (max-width: 968px) {
   .text-content {
     padding-right: 0;
-    padding: 0 15px;
+    padding-left: 0;
+    padding: 0 10px;
   }
 
   .description,

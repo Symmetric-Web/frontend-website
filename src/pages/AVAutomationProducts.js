@@ -277,8 +277,8 @@ function AVAutomationProducts() {
                   {selectedProduct.imageUrl && (
                     <div className="modal-image">
                       <img 
-                        src={selectedProduct.image} 
-                        alt={selectedProduct.title} 
+                        src={selectedProduct.imageUrl} 
+                        alt={selectedProduct.name} 
                         loading="lazy"
                         width="100%"
                         height="100%"
