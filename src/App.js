@@ -14,6 +14,7 @@ import Blog from './pages/Blog';
 import NetworkingSolutions from './pages/solutions/NetworkingSolutions';
 import BuildingTechSolutions from './pages/solutions/BuildingTechSolutions';
 import AVAutomationSolutions from './pages/solutions/AVAutomationSolutions';
+import Hiring from './pages/Hiring';
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
             <Route path="/networking-solutions" element={<NetworkingSolutions />} />
             <Route path="/building-tech-solutions" element={<BuildingTechSolutions />} />
             <Route path="/av-automation-solutions" element={<AVAutomationSolutions />} />
+            <Route path="/hiring" element={<Hiring />} />
           </Routes>
         </main>
         <Footer />

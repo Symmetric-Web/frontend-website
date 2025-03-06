@@ -1,7 +1,9 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import './Contact.css';
 
 const Contact = () => {
+  const navigate = useNavigate();
   return (
     <div className="contact-page">
       <div className="container">
@@ -19,7 +21,10 @@ const Contact = () => {
               business with our innovative technology solutions.
             </p>
             <div className="contact-buttons">
-              <button className="contact-button join-team">
+              <button 
+                className="contact-button join-team"
+                onClick={() => navigate('/hiring')}
+              >
                 Join Our Team
                 <span className="button-description">Explore Career Opportunities</span>
               </button>
