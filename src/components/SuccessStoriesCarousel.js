@@ -32,7 +32,7 @@ const stories = [
     category: "Connectivity",
     title: "Aerial Fiber Cable Erection for Wind Farms",
     description: "25,000 km of aerial ADSS fiber cable connectivity across wind farms in India",
-    image: "/images/case-studies/wind-farms.jpeg",
+    image: "/images/case-studies/wind-farms.png",
     details: {
       challenge: "The project required establishing robust communication networks between wind turbines while withstanding high wind speeds and environmental challenges.",
       solution: "Implementation of specialized Finolex ADSS cable, industrial switches, and Hikvision IP CCTV cameras, creating an integrated network for data transmission and surveillance.",
@@ -164,18 +164,11 @@ export const SuccessStoriesCarousel = () => {
                   <h3 className="card-title">{story.title}</h3>
                   <p className="card-description">{story.description}</p>
                 </div>
-                <picture>
-                  <source srcSet={story.image.replace('.png', '.webp').replace('.jpeg', '.webp')} type="image/webp" />
-                  <source srcSet={story.image.replace('.png', '.avif').replace('.jpeg', '.avif')} type="image/avif" />
-                  <img 
-                    src={story.image} 
-                    alt={story.title}
-                    className="card-image"
-                    loading="lazy"
-                    width="100%"
-                    height="100%"
-                  />
-                </picture>
+                <img 
+                  src={story.image} 
+                  alt={story.title}
+                  className="card-image"
+                />
               </div>
             </motion.div>
           ))}

@@ -69,7 +69,7 @@ const teamMembers = [
   {
     id: 4,
     name: "Prajakta Pradarkar",
-    position: "Chief Strategy Officer (CSO) - Operations",
+    position: "Head- Customer Service Office (CSO) - Operations",
     image: "/images/team/Prajakta.png",
     description: "Operations Excellence",
     expandedDescription: `Ms.Prajakta Pradarkar serves as the Chief Strategy Officer (CSO) - Operations at Symmetric IT Services Pvt. Ltd. With a BE in Electronics and 8 years of rich experience in Operations and Customer Service, she brings a blend of technical expertise and operational efficiency to the organization.
