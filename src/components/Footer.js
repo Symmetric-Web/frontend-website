@@ -4,6 +4,7 @@ import { FaFacebook, FaWhatsapp, FaLinkedin, FaInstagram, FaEnvelope } from 'rea
 
 const Footer = () => {
   const scriptURL = "https://script.google.com/macros/s/AKfycbwOO6giPyd2B7fDb2Leas10Ag80APvA27kgiqS4XcRStKU_PEkBhUjMMRUO2XMTEvxo/exec";
+  
   const [formData, setFormData] = useState({ name: "", email: "", phone: "", message: "" });
   const [status, setStatus] = useState("");
 
@@ -112,6 +113,7 @@ const Footer = () => {
             </button>
           </div>
         </div>
+        <img src="/images/image.png" alt="Certified Partners" className="certified-partners" />
         <div className="social-links">
           <a href="https://www.facebook.com/symmetricsols/" className="social-icon" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
             <FaFacebook />

@@ -6,7 +6,8 @@ const Hiring = () => {
     name: '',
     email: '',
     phone: '',
-    resume: null
+    education: '',
+    experience: '0'
   });
 
   const [errors, setErrors] = useState({});
@@ -25,7 +26,8 @@ const Hiring = () => {
     } else if (!/^[0-9]{10}$/.test(formData.phone.replace(/[^0-9]/g, ''))) {
       newErrors.phone = 'Please enter a valid 10-digit phone number';
     }
-    if (!formData.resume) newErrors.resume = 'Resume is required';
+    if (!formData.education.trim()) newErrors.education = 'Educational qualification is required';
+    if (!formData.experience) newErrors.experience = 'Years of experience is required';
 
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
@@ -46,43 +48,44 @@ const Hiring = () => {
     }
   };
 
-  const handleFileChange = (e) => {
-    const file = e.target.files[0];
-    if (file) {
-      if (file.type === 'application/pdf' || file.type.startsWith('image/')) {
-        setFormData(prev => ({
-          ...prev,
-          resume: file
-        }));
-        setErrors(prev => ({
-          ...prev,
-          resume: ''
-        }));
-      } else {
-        setErrors(prev => ({
-          ...prev,
-          resume: 'Please upload a PDF or image file'
-        }));
-      }
-    }
-  };
 
-  const handleSubmit = (e) => {
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
     if (validateForm()) {
-      // Here you would typically send the form data to your backend
-      console.log('Form submitted:', formData);
-      setSubmitStatus({
-        status: 'success',
-        message: 'Thank you for your application! We will get back to you soon.'
-      });
-      // Reset form
-      setFormData({
-        name: '',
-        email: '',
-        phone: '',
-        resume: null
-      });
+      setSubmitStatus({ status: 'sending', message: 'Please wait, submitting your application...' });
+      const form = new FormData();
+      Object.keys(formData).forEach((key) => form.append(key, formData[key]));
+      const final_form = JSON.stringify(Object.fromEntries(form.entries()));
+      try {
+        const response = await fetch("https://script.google.com/macros/s/AKfycbxrtFMF1RA74BJ3fzkqzTzzjNFQbizVqgngw5MMnCIO9zn1QZOOgzSIigdwNOZ-UZnz/exec", {
+          method: "POST",
+          mode: "no-cors",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: final_form
+        });
+        if (response.type === "opaque") {
+          setSubmitStatus({
+            status: 'success',
+            message: 'Thank you for your application! We will get back to you soon.'
+          });
+          setFormData({
+            name: '',
+            email: '',
+            phone: '',
+            education: '',
+            experience: '0'
+          });
+        }
+      } catch (error) {
+        console.error("Error!", error.message);
+        setSubmitStatus({
+          status: 'error',
+          message: 'There was an error submitting your application. Please try again later.'
+        });
+      }
     }
   };
 
@@ -140,17 +143,35 @@ const Hiring = () => {
               </div>
 
               <div className="form-group">
-                <label htmlFor="resume">Upload Resume (PDF or Image)</label>
+                <label htmlFor="education">Educational Qualification</label>
                 <input
-                  type="file"
-                  id="resume"
-                  name="resume"
-                  accept=".pdf,image/*"
-                  onChange={handleFileChange}
-                  className={errors.resume ? 'error' : ''}
+                  type="text"
+                  id="education"
+                  name="education"
+                  value={formData.education}
+                  onChange={handleInputChange}
+                  className={errors.education ? 'error' : ''}
                 />
-                {errors.resume && <span className="error-message">{errors.resume}</span>}
+                {errors.education && <span className="error-message">{errors.education}</span>}
               </div>
+
+              <div className="form-group">
+                <label htmlFor="experience">Years of Experience</label>
+                <select
+                  id="experience"
+                  name="experience"
+                  value={formData.experience}
+                  onChange={handleInputChange}
+                  className={errors.experience ? 'error' : ''}
+                >
+                  {[...Array(21)].map((_, i) => (
+                    <option key={i} value={i}>{i} years</option>
+                  ))}
+                  <option value=">30">&gt;20 years</option>
+                </select>
+                {errors.experience && <span className="error-message">{errors.experience}</span>}
+              </div>
+
 
               <button type="submit" className="submit-button">
                 Submit Application
