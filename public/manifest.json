@@ -3,18 +3,18 @@
   "name": "Symmetric IT Services",
   "icons": [
     {
-      "src": "images/Logo/Symm Logo.png",
+      "src": "images/Logo/Symm logo icon.webp",
       "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/png"
+      "type": "image/webp"
     },
     {
-      "src": "images/Logo/Symm Logo.png",
-      "type": "image/png",
+      "src": "images/Logo/Symm logo icon.webp",
+      "type": "image/webp",
       "sizes": "192x192"
     },
     {
-      "src": "images/Logo/Symm Logo.png",
-      "type": "image/png",
+      "src": "images/Logo/Symm logo icon.webp",
+      "type": "image/webp",
       "sizes": "512x512"
     }
   ],

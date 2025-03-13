@@ -183,7 +183,7 @@ const AVAutomationSolutions = () => {
       category: "ENERGY",
       title: "Energy Conservation",
       description: "Rising energy costs are impacting profitability and sustainability, making it essential to adopt smarter power usage habits and choices for a greener future. Symmetric IT Services offers LEED-compliant solutions to help monitor, optimize, and reduce energy consumption.",
-      image: "./images/Solutions/AV and Automation Solution/Luxury Home/Energy Conservation.png",
+      image: "./images/Solutions/AV and Automation Solution/Luxury Home/Energy Conservation.webp",
       details: [
         {
           title: "Key Features",
@@ -229,7 +229,7 @@ const AVAutomationSolutions = () => {
       category: "ENTERTAINMENT",
       title: "Home Theatres",
       description: "Digital content has transformed the way we entertain ourselves at home. But to make the most of this content, we need to experience it on a movie cinema like scale with a home theatre system. We help you recreate this experience in your own home with elements like a central media library, multi-room audio and very large screen home cinemas, tailored to your unique preferences.",
-      image: "./images/Solutions/AV and Automation Solution/Luxury Home/Home Theatres.png",
+      image: "./images/Solutions/AV and Automation Solution/Luxury Home/Home Theatres.webp",
       details: [
         {
           title: "Key Features",
@@ -258,7 +258,7 @@ const AVAutomationSolutions = () => {
             "Experience a fully integrated home theater with AV systems, lighting control, and all-digital video distribution.",
             "Support for a wide range of content formats, including CD, DVD, high-resolution audio, 4K video, streaming sources, and more.",
             "Enjoy larger-than-life high-definition video with laser projectors and cinema-quality sound for an immersive experience.",
-            "Control all your integrated AV equipment, HVAC, lighting, and more, right at your fingertips, so you never have to leave your seat."
+            "Control all your integrated AV equipment, HVAC, lighting, and more, right at your seat."
           ]
         },
         {
@@ -278,7 +278,7 @@ const AVAutomationSolutions = () => {
         category: "AUTOMATION",
         title: "Lighting and Smart Controls",
         description: "Intelligent lighting and automation systems can significantly enhance both work and living spaces by creating the right atmosphere or adjusting environmental factors automatically. These systems combine sensors with an integrated control platform to manage and automate spaces such as rooms, offices, homes, buildings, or campuses.",
-        image: "./images/Solutions/AV and Automation Solution/Luxury Home/Lighting & Automation.png",
+        image: "./images/Solutions/AV and Automation Solution/Luxury Home/Lighting & Automation.webp",
         details: [
           {
             title: "Key Features",
@@ -328,7 +328,7 @@ const AVAutomationSolutions = () => {
       category: "AUTOMATION",
       title: "Smart Home Systems",
       description: "A smart home should enhance your lifestyle, not complicate it. The modern smart home integrates multi-room audio and video entertainment, lighting management, control systems, energy savings, and surveillance systems to create a seamless living experience.",
-      image: "./images/Solutions/AV and Automation Solution/Luxury Home/Smart Home.jpeg",
+      image: "./images/Solutions/AV and Automation Solution/Luxury Home/Smart Home.webp",
       details: [
         {
           title: "Key Features",
@@ -377,7 +377,7 @@ const AVAutomationSolutions = () => {
       category: "SECURITY",
       title: "Smart Lock Solution",
       description: "Symmetric IT Services provides an advanced smart lock solution that simplifies access management while enhancing security. Our solution addresses the challenges of managing secure access to properties, especially with multiple users and remote access needs.",
-      image: "./images/Solutions/AV and Automation Solution/Luxury Home/Smart Locks.png",
+      image: "./images/Solutions/AV and Automation Solution/Luxury Home/Smart Locks.webp",
       details: [
         {
           title: "Key Features",
@@ -441,7 +441,7 @@ const AVAutomationSolutions = () => {
       category: "CONTROL",
       title: "Command Centre Solution",
       description: "Businesses and organizations require a central hub to monitor, control, and manage various systems—security, operations, or communications-efficiently and in real-time. Our Command Centre solution integrates various systems into a unified platform for real-time monitoring and decision-making.",
-      image: "./images/Solutions/AV and Automation Solution/Network Control and Automation/Command Centre .jpeg",
+      image: "./images/Solutions/AV and Automation Solution/Network Control and Automation/Command Centre .webp",
       details: [
         {
           title: "Key Features",
@@ -502,7 +502,7 @@ const AVAutomationSolutions = () => {
       category: "CONTROL",
       title: "Operations Centres",
       description: "Audio-visual technology is crucial in control and monitoring environments where swiftly identifying and resolving issues is vital. It significantly impacts centralized operations centers, such as Network Operation Centers (NOCs), Security Operation Centers (SOCs), or crisis management applications, by enhancing the management of critical networks and physical infrastructure.",
-      image: "./images/Solutions/AV and Automation Solution/Network Control and Automation/Operations Centres.png",
+      image: "./images/Solutions/AV and Automation Solution/Network Control and Automation/Operations Centres.webp",
       details: [
         {
           title: "Key Features",
@@ -1105,4 +1105,4 @@ const AVAutomationSolutions = () => {
   );
 };
 
-export default AVAutomationSolutions; 
+export default AVAutomationSolutions;

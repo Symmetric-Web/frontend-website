@@ -183,7 +183,7 @@ const BuildingTechSolutions = () => {
       category: "AUTOMATION",
       title: "Building Management System",
       description: "A Building Management System (BMS), designed and implemented by Symmetric IT Services, is an intelligent control system that monitors and manages the critical mechanical, electrical, and electromechanical systems within a facility.",
-      image: "./images/Solutions/Building Technologies/Building Management Solution.png",
+      image: "./images/Solutions/Building Technologies/Building Management Solution.webp",
       details: [
         {
           title: "Systems Managed",
@@ -236,7 +236,7 @@ const BuildingTechSolutions = () => {
       category: "SECURITY",
       title: "Access Control Systems: Securing Your Business",
       description: "Access Control by Symmetric IT Services is a robust security solution that regulates access to resources, ensuring only authorized individuals can enter physical or virtual spaces. This advanced method safeguards your organization by minimizing risks and enhancing security.",
-      image: "./images/Solutions/Building Technologies/Entry Access Solutions.png",
+      image: "./images/Solutions/Building Technologies/Entry Access Solutions.webp",
       details: [
         {
           title: "Types of Access Control",
@@ -274,7 +274,7 @@ const BuildingTechSolutions = () => {
       category: "SECURITY",
       title: "Guard Tour Monitoring System: Streamlined Security Management",
       description: "Symmetric IT Services offers a Guard Tour Monitoring System that enhances security operations by ensuring efficient patrol management and real-time monitoring of security personnel.",
-      image: "./images/Solutions/Building Technologies/Guard Tour Monitoring System.png",
+      image: "./images/Solutions/Building Technologies/Guard Tour Monitoring System.webp",
       details: [
         {
           title: "Key Features",
@@ -313,7 +313,7 @@ const BuildingTechSolutions = () => {
       category: "SAFETY",
       title: "Fire Alarm Systems (FAS): Safeguarding Lives and Properties",
       description: "Symmetric IT Services delivers comprehensive Fire Alarm and Safety Solutions designed to detect, respond, and suppress fire hazards, ensuring safety for residential, commercial, and industrial environments.",
-      image: "./images/Solutions/Building Technologies/Fire Safety solutions.png",
+      image: "./images/Solutions/Building Technologies/Fire Safety solutions.webp",
       details: [
         {
           title: "Components of the Solution",
@@ -364,7 +364,7 @@ const BuildingTechSolutions = () => {
       category: "SECURITY",
       title: "Intrusion Detection System (IDS) Solution",
       description: "Symmetric IT Services provides an advanced Intrusion Detection System (IDS) that detects unauthorized access and potential security threats in real-time, ensuring the safety of residential, commercial, and industrial premises.",
-      image: "./images/Solutions/Building Technologies/Intrusion Detection Solution.png",
+      image: "./images/Solutions/Building Technologies/Intrusion Detection Solution.webp",
       details: [
         {
           title: "Motion Detection Systems",
@@ -435,7 +435,7 @@ const BuildingTechSolutions = () => {
       category: "SECURITY",
       title: "CCTV and Smart Surveillance Systems: Enhancing Safety and Security",
       description: "CCTV (Closed-Circuit Television) is a crucial component of modern security systems, providing real-time monitoring and recording for both indoor and outdoor spaces. Whether for homes, workplaces, or public areas, CCTV systems are the first line of defense in ensuring safety and deterring crime.",
-      image: "./images/Solutions/Building Technologies/IP CCTV  Surveillance.png",
+      image: "./images/Solutions/Building Technologies/IP CCTV  Surveillance.webp",
       details: [
         {
           title: "Comprehensive Services by Symmetric IT Services",
@@ -486,7 +486,7 @@ const BuildingTechSolutions = () => {
       category: "AUTOMATION",
       title: "Integrated Building Management Systems (iBMS): The Future of Smarter Buildings",
       description: "Integrated Building Management Systems (BMS) are revolutionizing the way modern buildings operate by providing centralized control and monitoring of essential systems. Among the leading platforms in this domain is the Symmetric IT Services Building Management System (BMS), powered by the Niagara Framework®.",
-      image: "./images/Solutions/Building Technologies/iBMS.png",
+      image: "./images/Solutions/Building Technologies/iBMS.webp",
       details: [
         {
           title: "Platform Features",
@@ -850,7 +850,7 @@ const BuildingTechSolutions = () => {
       category: "SAFETY",
       title: "Water Leak Detection Systems: Ensuring Safety and Operational Continuity",
       description: "A Water Leak Detection System, offered by Symmetric IT Services, is an advanced solution designed to identify leaks or spills using probes or sensing cables. These systems promptly trigger alarms to alert the maintenance team, ensuring rapid response to prevent damage and operational disruptions.",
-      image: "./images/Solutions/Building Technologies/Water Leak Detection Systems.png",
+      image: "./images/Solutions/Building Technologies/Water Leak Detection Systems.webp",
       details: [
         {
           title: "Why Water Leak Detection Matters",
@@ -945,4 +945,4 @@ const BuildingTechSolutions = () => {
   );
 };
 
-export default BuildingTechSolutions; 
+export default BuildingTechSolutions;

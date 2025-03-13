@@ -8,27 +8,27 @@ const Blog = () => {
   const slides = [
     {
       title: "Networking Products",
-      image: "/images/home/Networking.png"
+      image: "/images/home/Networking.webp"
     },
     {
       title: "Building Technology Products",
-      image: "/images/home/Building Technology.png"
+      image: "/images/home/Building Technology.webp"
     },
     {
       title: "AV & Automation Products",
-      image: "/images/home/AV solutions.png"
+      image: "/images/home/AV solutions.webp"
     },
     {
       title: "Networking Solutions",
-      image: "/images/home/Networking.png"
+      image: "/images/home/Networking.webp"
     },
     {
       title: "Building Technology Solutions",
-      image: "/images/home/Building Technology.png"
+      image: "/images/home/Building Technology.webp"
     },
     {
       title: "AV & Automation Solutions",
-      image: "/images/home/AV solutions.png"
+      image: "/images/home/AV solutions.webp"
     },
     // Add more slides as needed
   ];
@@ -130,4 +130,4 @@ const Blog = () => {
   );
 };
 
-export default Blog; 
+export default Blog;

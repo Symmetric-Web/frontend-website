@@ -1,9 +1,18 @@
-import React, { useState } from 'react';
+import React, { useState, lazy, Suspense } from 'react';
 import { Link } from 'react-router-dom';
 import './Home.css';
-import { SuccessStoriesCarousel } from '../components/SuccessStoriesCarousel';
-import { motion, AnimatePresence } from 'framer-motion';
-import Testimonials from '../components/Testimonials';
+
+// Lazy load components
+const SuccessStoriesCarousel = lazy(() => import('../components/SuccessStoriesCarousel').then(module => ({
+  default: module.SuccessStoriesCarousel
+})));
+const Testimonials = lazy(() => import('../components/Testimonials'));
+const AnimatePresence = lazy(() => import('framer-motion').then(module => ({
+  default: module.AnimatePresence
+})));
+const motion = lazy(() => import('framer-motion').then(module => ({
+  default: module.motion
+})));
 
 
 // Team members data
@@ -12,7 +21,7 @@ const teamMembers = [
     id: 1,
     name: "Suresh Kamath",
     position: "Founder and Director",
-    image: "images/team/Suresh Kamath.png",
+    image: "images/team/Suresh Kamath.webp",
     description: "32+ years of experience in Data Networks",
     expandedDescription: `Mr. Suresh Kamath is a seasoned professional with over 32 years of experience in the field of Data Networks. He holds a Bachelor of Engineering in Electronics & Communication, achieved with first-class honors, along with a Diploma in Electronics and Telecommunication. Additionally, he is a Cisco Certified Network Associate (CCNA) and Cisco Certified Network Professional (CCNP).
 
@@ -40,7 +49,7 @@ const teamMembers = [
     id: 2,
     name: "Vandana Kamath",
     position: "Founder and Director - Accounts & Admin",
-    image: "/images/team/Vandana Kamath.png",
+    image: "/images/team/Vandana Kamath.webp",
     description: "30+ years in Financial Management",
     expandedDescription: `Ms.Vandana Kamath, the founder and director of Symmetric IT Services Pvt. Ltd., is a seasoned professional with over 30 years of specialized experience in Accounts and Administration. With a B.Com degree as her foundation, she has been instrumental in ensuring the financial stability and operational excellence of the organization.
 
@@ -54,7 +63,7 @@ const teamMembers = [
     id: 3,
     name: "Devendra More",
     position: "Head- Pre Sales and Configuration",
-    image: "/images/team/Devendra.png",
+    image: "/images/team/Devendra.webp",
     description: "Technical",
     expandedDescription: `Mr.Devendra More is the Technical Manager at Symmetric IT Services Pvt. Ltd., with over 15 years of experience in designing and implementing advanced technology solutions. Holding a B.Sc. in Electronics, he brings deep knowledge and expertise to every project he handles.
 
@@ -70,7 +79,7 @@ const teamMembers = [
     id: 4,
     name: "Prajakta Pradarkar",
     position: "Head- Customer Service Office (CSO) - Operations",
-    image: "/images/team/Prajakta.png",
+    image: "/images/team/Prajakta.webp",
     description: "Operations Excellence",
     expandedDescription: `Ms.Prajakta Pradarkar serves as the Chief Strategy Officer (CSO) - Operations at Symmetric IT Services Pvt. Ltd. With a BE in Electronics and 8 years of rich experience in Operations and Customer Service, she brings a blend of technical expertise and operational efficiency to the organization.
 
@@ -117,13 +126,13 @@ function Home() {
           <div className="hero-images">
             <div className="image-grid">
               <Link to="/networking" className="image-item">
-                <img src="/images/home/Networking.png" alt="Networking" />
+                <img src="/images/home/Networking.webp" alt="Networking" />
                 <div className="image-overlay">
                   <h3>Networking Products</h3>
                 </div>
               </Link>
               <Link to="/building-tech" className="image-item">
-                <img src="images/home/Building Technology.png" alt="Building Tech" />
+                <img src="images/home/Building Technology.webp" alt="Building Tech" />
                 <div className="image-overlay">
                   <h3>Building Technology Products</h3>
                 </div>
@@ -131,7 +140,7 @@ function Home() {
 
 
               <Link to="https://symmetric-it-services-pvt-ltd.vercel.app"target="_blank" className="image-item">
-                <img src="images/home/home automation.jpeg" alt="Automation" />
+                <img src="images/home/home automation.webp" alt="Automation" />
                 <div className="image-overlay">
                 <div className="image-overlay">
                   <h3>Home Automation Products</h3>
@@ -139,7 +148,7 @@ function Home() {
               </div>
               </Link>
               <Link to="/audio-visual" className="image-item">
-                <img src="images/home/AV solutions.png" alt="AV Solutions" />
+                <img src="images/home/AV solutions.webp" alt="AV Solutions" />
                 <div className="image-overlay">
                   <h3>AV Products</h3>
                 </div>
@@ -157,7 +166,7 @@ function Home() {
                 <p>At Symmetric IT Services, we're committed to delivering cutting-edge technology solutions. As a pioneering force in the IT sector, we've been at the forefront of digital transformation. Our mission is simple yet profound: to create innovative solutions that empower businesses to thrive in the digital age.</p>
               </div>
               <div className="about-logo">
-                <img src="/images/logo/Symm Logo.png" alt="Symmetric IT Services Logo" />
+                <img src="/images/logo/Symm Logo.webp" alt="Symmetric IT Services Logo" />
               </div>
             </div>
           </div>
@@ -171,7 +180,7 @@ function Home() {
           <div className="services-grid">
             <Link to="/networking" className="service-card">
               <div className="service-image">
-                <img src="/images/home/Services/Networking Solutions.png" alt="Networking Solutions" />
+                <img src="/images/home/Services/Networking Solutions.webp" alt="Networking Solutions" />
               </div>
               <div className="service-content">
                 <h3>Networking Solutions</h3>
@@ -181,7 +190,7 @@ function Home() {
             </Link>
             <Link to="/building-tech" className="service-card">
               <div className="service-image">
-                <img src="/images/home/Services/Building Technologies.png" alt="Building Technologies" />
+                <img src="/images/home/Services/Building Technologies.webp" alt="Building Technologies" />
               </div>
               <div className="service-content">
                 <h3>Building Technologies</h3>
@@ -191,7 +200,7 @@ function Home() {
             </Link>
             <Link to="/audio-visual" className="service-card">
               <div className="service-image">
-                <img src="/images/home/Services/Audio-Visual and Automation Solutions.png" alt="Audio-Visual Solutions" />
+                <img src="/images/home/Services/Audio-Visual and Automation Solutions.webp" alt="Audio-Visual Solutions" />
               </div>
               <div className="service-content">
                 <h3>AV and Automation Solutions</h3>
@@ -210,7 +219,7 @@ function Home() {
           <div className="message-container">
             <div className="director-image">
               <img 
-                src="images/team/Suresh Kamath.png" 
+                src="images/team/Suresh Kamath.webp" 
                 alt="Suresh Kamath - Director" 
                 className="director-photo"
               />
@@ -318,22 +327,24 @@ function Home() {
       </AnimatePresence>
 
       {/* Success Stories Section */}
-      <section className="success-stories">
-        <div className="container">
-          <h2 className="section-title">Success Stories</h2>
-          <SuccessStoriesCarousel />
-        </div>
-      </section>
-
-      
+      <Suspense fallback={<div className="loading-placeholder">Loading Success Stories...</div>}>
+        <section className="success-stories">
+          <div className="container">
+            <h2 className="section-title">Success Stories</h2>
+            <SuccessStoriesCarousel />
+          </div>
+        </section>
+      </Suspense>
 
       {/* Client Testimonials Section */}
-      <section className="success-stories">
-        <div className="container">
-          <h2 className="section-title">Client Testimonials</h2>
-          <Testimonials />
-        </div>
-      </section>
+      <Suspense fallback={<div className="loading-placeholder">Loading Testimonials...</div>}>
+        <section className="success-stories">
+          <div className="container">
+            <h2 className="section-title">Client Testimonials</h2>
+            <Testimonials />
+          </div>
+        </section>
+      </Suspense>
      
 
     </div>

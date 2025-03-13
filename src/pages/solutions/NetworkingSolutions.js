@@ -184,7 +184,7 @@ const NetworkingSolutions = () => {  // Rename from Solutions to NetworkingSolut
       category: "CONNECTIVITY",
       title: "Aerial Fiber Optic Connectivity Solutions",
       description: "Symmetric IT Services provides cutting-edge Aerial Fiber Optic Connectivity Solutions designed for fast, reliable, and scalable communication networks. Ideal for areas where underground cabling is not feasible, our solutions ensure seamless data transmission with minimal disruption.",
-      image: "./images/Solutions/Networking Solutions/Aerial Fiber Solution.png",
+      image: "./images/Solutions/Networking Solutions/Aerial Fiber Solution.webp",
       details: [
         {
           title: "Our Aerial Fiber Optic Connectivity Solutions",
@@ -258,7 +258,7 @@ const NetworkingSolutions = () => {  // Rename from Solutions to NetworkingSolut
       category: "CONNECTIVITY",
       title: "Underground Fiber Connectivity Solution",
       description: "Symmetric IT Services delivers robust, secure, and scalable underground fiber connectivity solutions, enabling high-speed data transmission for telecommunications, smart cities, and critical infrastructure projects.",
-      image: "./images/Solutions/Networking Solutions/Underground Fiber Connectivity Solution.png",
+      image: "./images/Solutions/Networking Solutions/Underground Fiber Connectivity Solution.webp",
       details: [
         {
           title: "Key Components",
@@ -298,7 +298,7 @@ const NetworkingSolutions = () => {  // Rename from Solutions to NetworkingSolut
       category: "CAMPUS",
       title: "Campus Networking Solutions",
       description: "Symmetric IT Services provides comprehensive solutions to ensure seamless connectivity, security, and scalability for educational, corporate, and industrial campuses.",
-      image: "./images/Solutions/Networking Solutions/Campus Networking Solution.png",
+      image: "./images/Solutions/Networking Solutions/Campus Networking Solution.webp",
       details: [
         {
           title: "Key Features",
@@ -336,7 +336,7 @@ const NetworkingSolutions = () => {  // Rename from Solutions to NetworkingSolut
       category: "CAMPUS WIRELESS",
       title: "Campus Wireless Networking Solutions",
       description: "Symmetric IT Services provides advanced Campus Wireless Networking Solutions, designed to deliver seamless, high-speed connectivity for educational institutions, corporate campuses, and industrial complexes. Our solutions ensure reliable, secure, and scalable wireless networks to meet the demands of modern digital environments.",
-      image: "./images/Solutions/Networking Solutions/Campus Wireless Networking Solutions.png",
+      image: "./images/Solutions/Networking Solutions/Campus Wireless Networking Solutions.webp",
       details: [
         {
           title: "Key Features",
@@ -384,7 +384,7 @@ const NetworkingSolutions = () => {  // Rename from Solutions to NetworkingSolut
       category: "INFRASTRUCTURE",
       title: "Enterprise Network Racks and UPS Solutions",
       description: "Symmetric IT Services offers comprehensive Enterprise Network Racks and UPS Solutions to ensure the reliability, security, and efficiency of your IT infrastructure. These solutions are designed to safeguard your critical equipment and provide uninterrupted operations.",
-      image: "./images/Solutions/Networking Solutions/Enterprise & Industrial Network Racks Solution.png",
+      image: "./images/Solutions/Networking Solutions/Enterprise & Industrial Network Racks Solution.webp",
       details: [
         {
           title: "Network Racks Solutions",
@@ -433,7 +433,7 @@ const NetworkingSolutions = () => {  // Rename from Solutions to NetworkingSolut
       category: "INFRASTRUCTURE",
       title: "High-End Server, Workstation Solutions & Applications",
       description: "Symmetric IT Services provides high-performance Server and Workstation Solutions designed to meet the demands of businesses requiring cutting-edge computing power, reliability, and scalability. Our solutions are built to support mission-critical applications in sectors like data analysis, engineering, media production, and enterprise IT environments.",
-      image: "./images/Solutions/Networking Solutions/High-End Server and Workstation Solutions.png",
+      image: "./images/Solutions/Networking Solutions/High-End Server and Workstation Solutions.webp",
       details: [
         {
           title: "High-End Servers Solutions",
@@ -491,7 +491,7 @@ const NetworkingSolutions = () => {  // Rename from Solutions to NetworkingSolut
       category: "INFRASTRUCTURE",
       title: "Highway Toll Management Solutions",
       description: "Symmetric IT Services provides advanced Highway Toll Management Solutions designed to improve the efficiency, accuracy, and security of toll collection systems. Our solutions are built for seamless integration with existing infrastructure, ensuring smooth traffic flow, reducing congestion, and enhancing revenue management for highway operators.",
-      image: "./images/Solutions/Networking Solutions/Highway Toll Management Solutions.png",
+      image: "./images/Solutions/Networking Solutions/Highway Toll Management Solutions.webp",
       details: [
         {
           title: "Key Features of Our Highway Toll Management Solutions",
@@ -551,7 +551,7 @@ const NetworkingSolutions = () => {  // Rename from Solutions to NetworkingSolut
       category: "INFRASTRUCTURE",
       title: "Industrial Networking Solutions",
       description: "Symmetric IT Services offers reliable and high-performance Industrial Networking Solutions designed to enhance connectivity, automation, and security in harsh industrial environments. Our solutions ensure seamless data exchange, improve operational efficiency, and enable real-time decision-making across various sectors, including manufacturing, energy, and oil & gas.",
-      image: "./images/Solutions/Networking Solutions/Industrial Networking Solutions.png",
+      image: "./images/Solutions/Networking Solutions/Industrial Networking Solutions.webp",
       details: [
         {
           title: "Key Features",
@@ -639,7 +639,7 @@ const NetworkingSolutions = () => {  // Rename from Solutions to NetworkingSolut
       category: "INFRASTRUCTURE",
       title: "Surge Protection Solutions",
       description: "Symmetric IT Services offers advanced Surge Protection Solutions designed to protect sensitive equipment and systems from power surges, voltage spikes, and electrical disturbances. Our solutions are ideal for ensuring the longevity and reliability of your electrical and IT infrastructure.",
-      image: "./images/Solutions/Networking Solutions/Surge Protection Solutions.png",
+      image: "./images/Solutions/Networking Solutions/Surge Protection Solutions.webp",
       details: [
         {
           title: "Key Features of Our Surge Protection Solutions",

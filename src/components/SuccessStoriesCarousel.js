@@ -8,7 +8,7 @@ const stories = [
     category: "Infrastructure",
     title: "HTMS Network Implementation for EFKON",
     description: "Highway Traffic Management System implementation across major Indian highways",
-    image: "/images/case-studies/Bandra Worli Sealink.png",
+    image: "/images/case-studies/Bandra Worli Sealink.webp",
     details: {
       challenge: "The project aimed to enhance the control and operation of various traffic management systems, ensuring efficient traffic flow and improved safety on major highways in India. Key locations included Bandra-Worli Link Road and Hosur Road Highway.",
       solution: "Implementation of advanced technologies including Automation Traffic Counter cum Classifier (ATCC), CCTV, Emergency Communication System (ECS), Meteorological Stations (METs), Network Management System (NMS), and Variable Message Signs (VMS). The solution utilized Finolex Fibre Optic Cable and HP switches for reliable connectivity.",
@@ -20,7 +20,7 @@ const stories = [
     category: "Security",
     title: "E-Fencing with CCTV Integration for Indian Navy",
     description: "First e-fencing project integrated with CCTV for the Indian Navy in Vishakhapatnam",
-    image: "/images/case-studies/E-Fencing with CCTV .png",
+    image: "/images/case-studies/E-Fencing with CCTV .webp",
     details: {
       challenge: "The project needed to provide enhanced security measures around critical naval installations while ensuring real-time monitoring and comprehensive coverage of the designated area.",
       solution: "Deployment of NEMTEK E-fencing energizers, Finolex Fibre Optic Cables, and GE CCTV cameras integrated with HP switches for seamless connectivity. The system provides real-time alerts and monitoring capabilities.",
@@ -32,7 +32,7 @@ const stories = [
     category: "Connectivity",
     title: "Aerial Fiber Cable Erection for Wind Farms",
     description: "25,000 km of aerial ADSS fiber cable connectivity across wind farms in India",
-    image: "/images/case-studies/wind-farms.png",
+    image: "/images/case-studies/wind-farms.webp",
     details: {
       challenge: "The project required establishing robust communication networks between wind turbines while withstanding high wind speeds and environmental challenges.",
       solution: "Implementation of specialized Finolex ADSS cable, industrial switches, and Hikvision IP CCTV cameras, creating an integrated network for data transmission and surveillance.",
@@ -44,7 +44,7 @@ const stories = [
     category: "Automation",
     title: "Lighting Automation for Resto-Bars",
     description: "Smart lighting solutions for premium restaurants and bars across India",
-    image: "/images/case-studies/resto-bars.png",
+    image: "/images/case-studies/resto-bars.webp",
     details: {
       challenge: "The project needed to design, supply, and deploy comprehensive lighting automation and dimming solutions that would create captivating ambiances centered around unique themes for each establishment.",
       solution: "Implementation of sophisticated lighting solutions including multi-dimming scenes, strategic light highlighting, LED fixtures with adjustable brightness, and advanced dimming controllers.",
@@ -67,7 +67,7 @@ const stories = [
       "category": "Security & Access Control",
       "title": "Boom Barrier for Traffic Control & Security",
       "description": "Implementation of Automatic Boom Barriers with RFID and License Plate Recognition for a residential society with 500+ apartments.",
-      "image": "/images/case-studies/boom-barrier.png",
+      "image": "/images/case-studies/boom-barrier.webp",
       "details": {
         "challenge": "Unregulated vehicle movement caused traffic congestion, manual vehicle checks led to long queues, unauthorized parking in restricted areas, and high operational costs due to manpower reliance.",
         "solution": "Installed Automatic Boom Barriers at entry and exit points, integrated with RFID-based access control and License Plate Recognition (LPR) cameras for seamless vehicle access management.",
@@ -79,7 +79,7 @@ const stories = [
       "category": "Security & Access Control",
       "title": "Flap Barrier for Pedestrian Access Control",
       "description": "Deployment of Flap Barriers with biometric scanners and RFID card readers to regulate pedestrian access at a corporate office with 1,000+ employees and visitors daily.",
-      "image": "/images/case-studies/flap-barrier.png",
+      "image": "/images/case-studies/flap-barrier.webp",
       "details": {
         "challenge": "Open access points made it difficult to restrict unauthorized personnel, manual ID verification caused long waiting lines, tailgating incidents compromised security, and attendance tracking inaccuracies led to payroll discrepancies.",
         "solution": "Implemented Flap Barriers with biometric scanners, RFID card readers, and infrared sensors to detect multiple entries and prevent tailgating. Integrated the system with HR software for real-time attendance tracking.",
@@ -91,7 +91,7 @@ const stories = [
       "category": "Security & Surveillance",
       "title": "CCTV Surveillance System for Security Enhancement",
       "description": "Installation of an advanced CCTV system with IP cameras, NVRs, and remote access capabilities for a commercial complex with multiple offices and retail outlets.",
-      "image": "/images/case-studies/CCTV Surveillance System.png",
+      "image": "/images/case-studies/CCTV Surveillance System.webp",
       "details": {
         "challenge": "Lack of surveillance led to increased security breaches, unauthorized access to restricted areas, absence of real-time monitoring, and high security costs due to excessive personnel deployment.",
         "solution": "Deployed a CCTV system with IP cameras, Network Video Recorders (NVRs), and remote access features. Prioritized high-risk zones such as cash counters, entry/exit points, and parking lots for surveillance.",
@@ -103,7 +103,7 @@ const stories = [
       "category": "Renewable Energy Infrastructure",
       "title": "Implementation of SCADA, CCTV, and Fire Alarm Systems at Belectric Renewables' 100 MW Pavgad Solar Farm",
       "description": "Deployment of SCADA connectivity, Bosch CCTV surveillance, and Bosch fire alarm systems for comprehensive monitoring, security, and safety at a 100 MW solar farm.",
-      "image": "/images/case-studies/pavgad-solar-farm.png",
+      "image": "/images/case-studies/pavgad-solar-farm.webp",
       "details": {
         "challenge": "Remote location and infrastructure limitations, integration of multiple systems, and security and safety concerns.",
         "solution": "Established a robust communication backbone, developed a unified platform for system interoperability, and implemented multi-layer security measures including access control and surveillance.",

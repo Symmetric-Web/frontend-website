@@ -145,7 +145,7 @@ const CaseStudy = () => {
       title: "Aerial Fiber Cable Erection for Wind Farms",
       shortDescription: "25,000 km of aerial ADSS fiber cable connectivity across wind farms in India",
       description: "Design and execution of extensive aerial fiber cable network connecting wind turbines, supporting major companies like GE, Nodex, Enercon, and Envision in the renewable energy sector.",
-      imageUrl: "./images/case-studies/wind-farms.jpeg",
+      imageUrl: "./images/case-studies/wind-farms.webp",
       details: {
         challenge: "The project required establishing robust communication networks between wind turbines while withstanding high wind speeds and environmental challenges.",
         solution: "Implementation of specialized Finolex ADSS cable, industrial switches, and Hikvision IP CCTV cameras, creating an integrated network for data transmission and surveillance.",
@@ -308,4 +308,4 @@ const textVariants = {
   right: { x: 20, opacity: 1 },
 };
 
-export default CaseStudy; 
+export default CaseStudy;

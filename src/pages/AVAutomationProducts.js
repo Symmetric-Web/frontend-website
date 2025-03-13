@@ -94,7 +94,7 @@ function AVAutomationProducts() {
       <section className="hero-section">
         <div className="container">
           <img 
-            src="images/home/AV solutions.png"
+            src="images/home/AV solutions.webp"
             alt="AV and Automation Solutions"
           />
         </div>

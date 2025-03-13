@@ -96,7 +96,7 @@ const Footer = () => {
       </div>
       <div className="footer-bottom">
         <div className="footer-branding">
-          <img src="/images/Logo/Symm Logo.png" alt="Symmetric IT Services" className="footer-logo" />
+          <img src="/images/Logo/Symm Logo.webp" alt="Symmetric IT Services" className="footer-logo" />
           <p className="footer-tagline">
             We Help Companies To Build Their<br />
             <span className="highlight">Technology Infrastructure And Provide</span>
@@ -113,7 +113,7 @@ const Footer = () => {
             </button>
           </div>
         </div>
-        <img src="/images/image.png" alt="Certified Partners" className="certified-partners" />
+        <img src="/images/image.webp" alt="Certified Partners" className="certified-partners" />
         <div className="social-links">
           <a href="https://www.facebook.com/symmetricsols/" className="social-icon" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
             <FaFacebook />
