@@ -106,7 +106,7 @@ function NetworkingProducts() {
         <div className="grid-container">
           <div className="grid-item">
             <img 
-              src="/images/Networking/Scada network center.webp" 
+              src="/images/networking/Scada network center.webp" 
               alt="Network Infrastructure"
               className="grid-image"
             />

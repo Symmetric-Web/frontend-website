@@ -29,7 +29,7 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="navbar-container">
         <Link to="/" className="navbar-logo" onClick={closeMenu}>
-          <img src="/images/logo/Symm Logo.webp" alt="Symmetric IT Services" />
+          <img src="/images/Logo/Symm Logo.webp" alt="Symmetric IT Services" />
         </Link>
 
         {/* Desktop Navigation */}
