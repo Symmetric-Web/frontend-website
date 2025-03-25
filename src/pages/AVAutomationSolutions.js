@@ -90,7 +90,7 @@ const AVAutomationSolutions = () => {
         "Multiple use cases",
         "Easy reconfiguration"
       ]
-    }
+    },
     {
       title: "Conference Room Solutions",
       description: "State-of-the-art audiovisual solutions for modern conference rooms and meeting spaces.",

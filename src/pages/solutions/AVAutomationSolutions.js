@@ -377,7 +377,7 @@ const AVAutomationSolutions = () => {
       category: "SECURITY",
       title: "Smart Lock Solution",
       description: "Symmetric IT Services provides an advanced smart lock solution that simplifies access management while enhancing security. Our solution addresses the challenges of managing secure access to properties, especially with multiple users and remote access needs.",
-      image: "./images/Solutions/AV and Automation Solution/Luxury Home/Smart Locks.webp",
+      image: "./images/Solutions/AV and Automation Solution/Luxury Home/smart locks.webp",
       details: [
         {
           title: "Key Features",
@@ -554,7 +554,7 @@ const AVAutomationSolutions = () => {
       category: "AUDITORIUM",
       title: "Auditorium Solution",
       description: "Redefining the auditorium AV experience enhances both large conferences and intimate gatherings. Key elements include ambiance, lighting, sound, and comfortable seating, engaging audiences through various sensory touchpoints.",
-      image: "./images/Solutions/AV and Automation Solution/Video Collaboration/Auditorium Solution.png",
+      image: "./images/Solutions/AV and Automation Solution/Video collaboration/Auditorium Solution.webp",
       details: [
         {
           title: "Key Features",
@@ -617,7 +617,7 @@ const AVAutomationSolutions = () => {
       category: "TRAINING",
       title: "AV Integrated Training Rooms",
       description: "Make training sessions more effective, accessible, and affordable with advanced technology-enabled training rooms from Symmetric IT Services. Training is essential for every organization, and achieving Learning and Development goals requires modern AV technology.",
-      image: "./images/Solutions/AV and Automation Solution/Video Collaboration/AV Integrated Training Room.png",
+      image: "./images/Solutions/AV and Automation Solution/Video collaboration/AV Integrated Training Room.webp",
       details: [
         {
           title: "Key Benefits",
@@ -658,7 +658,7 @@ const AVAutomationSolutions = () => {
       category: "CONFERENCE",
       title: "Boardroom / Conference Rooms",
       description: "Boardrooms and conference rooms are essential spaces where teams brainstorm, discuss ideas, negotiate, and strategize the way forward. These rooms are designed to foster seamless communication, connection, and collaboration—essential for helping teams achieve more together.",
-      image: "./images/Solutions/AV and Automation Solution/Video Collaboration/Boardroom_Conference Rooms.png",
+      image: "./images/Solutions/AV and Automation Solution/Video collaboration/Boardroom_Conference Rooms.webp",
       details: [
         {
           title: "Modern Collaboration Features",
@@ -712,7 +712,7 @@ const AVAutomationSolutions = () => {
       category: "TOWN HALL",
       title: "Cafeteria and Town Hall Solutions",
       description: "Town Halls (or all-hands meetings) are essential for engaging employees, discussing key topics, and aligning teams. Whether in-person or virtual, creating a space for the whole organization to participate can be challenging. Symmetric IT Services helps transform cafeterias into large town hall or event spaces by integrating modern technologies.",
-      image: "./images/Solutions/AV and Automation Solution/Video Collaboration/Cafeteria and town halls.png",
+      image: "./images/Solutions/AV and Automation Solution/Video collaboration/Cafeteria and town halls.webp",
       details: [
         {
           title: "Key Features",
@@ -764,7 +764,7 @@ const AVAutomationSolutions = () => {
       category: "HUDDLE",
       title: "Collaborative Huddle Rooms",
       description: "Large boardrooms and meeting rooms can be inefficient for smaller groups, leading to underutilized space and wasted resources. For smaller teams, huddle rooms are a far more effective solution, offering the ideal environment for brainstorming, interviews, or one-on-one meetings.",
-      image: "./images/Solutions/AV and Automation Solution/Video Collaboration/collaborative Huddle rooms.png",
+      image: "./images/Solutions/AV and Automation Solution/Video collaboration/collaborative Huddle rooms.webp",
       details: [
         {
           title: "System Features",
@@ -816,7 +816,7 @@ const AVAutomationSolutions = () => {
       category: "HYBRID",
       title: "Hybrid Collaboration Rooms",
       description: "Hybrid collaboration is becoming increasingly essential as organizations recognize the need for solutions that offer flexibility, agility, and resilience in today's evolving work environment. Symmetric IT Services helps organizations overcome the challenges and embrace the opportunities of hybrid work by creating meeting rooms that integrate seamlessly with virtual collaboration tools or unified communications (UC) infrastructure.",
-      image: "./images/Solutions/AV and Automation Solution/Video Collaboration/hybrid collaboration rooms.png",
+      image: "./images/Solutions/AV and Automation Solution/Video collaboration/hybrid collaboration rooms.webp",
       details: [
         {
           title: "Key Features",
@@ -868,7 +868,7 @@ const AVAutomationSolutions = () => {
       category: "VIDEO CONFERENCING",
       title: "Understanding Video Conferencing",
       description: "The next best thing to meeting in person is connecting through video conferencing, allowing for seamless interaction without being physically present. Modern video conferencing systems provide crystal-clear high-definition visuals and audio for a smooth and engaging experience. Today's fully integrated video conferencing solutions are designed for reliability, ensuring your meetings and presentations proceed without a hitch.",
-      image: "./images/Solutions/AV and Automation Solution/Video Collaboration/video conferencing rooms.png",
+      image: "./images/Solutions/AV and Automation Solution/Video collaboration/video conferencing rooms.webp",
       details: [
         {
           title: "Key Features",
@@ -920,7 +920,7 @@ const AVAutomationSolutions = () => {
       category: "MULTIPURPOSE",
       title: "Multi-purpose Rooms",
       description: "As real-estate costs appreciate, most businesses in urban locations need to utilise their space more productively. This makes multipurpose or multi-utility spaces – which can perform more than one business function – an extremely powerful tool in improving the ROI of modern office spaces. Multipurpose Halls designed by Symmetric IT Services provide businesses with flexible spaces which can quickly be adapted for different types of collaborative events and audience sizes.",
-      image: "./images/Solutions/AV and Automation Solution/Video Collaboration/multipurpose rooms.png",
+      image: "./images/Solutions/AV and Automation Solution/Video collaboration/multipurpose rooms.webp",
       details: [
         {
           title: "Key Benefits",
@@ -975,7 +975,7 @@ const AVAutomationSolutions = () => {
       category: "DIGITAL SIGNAGE",
       title: "Digital Signage",
       description: "Digital signage is everywhere, from eye-catching advertisements in malls and restaurant menu boards to movie schedules in theaters. It's a powerful blend of hardware and software, seamlessly working together to display multimedia content that grabs attention. With Symmetric IT Services' digital display solutions, you can efficiently distribute relevant content, from social media feeds to company updates, across multiple locations or spaces with a single click.",
-      image: "./images/Solutions/AV and Automation Solution/Visual Solutions/Digital Signage.jpeg",
+      image: "./images/Solutions/AV and Automation Solution/Visual Solutions/Digital Signage.webp",
       details: [
         {
           title: "Key Benefits",
@@ -1027,7 +1027,7 @@ const AVAutomationSolutions = () => {
       category: "PROJECTOR",
       title: "Projector Solution",
       description: "Customers need high-quality, reliable projectors for business, education, or home use, with easy integration into existing systems. Our projectors deliver bright, sharp images with customizable features for various settings.",
-      image: "./images/Solutions/AV and Automation Solution/Visual Solutions/projector solutions.png",
+      image: "./images/Solutions/AV and Automation Solution/Visual Solutions/projector solutions.webp",
       details: [
         {
           title: "Key Features",

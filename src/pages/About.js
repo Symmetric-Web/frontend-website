@@ -131,7 +131,7 @@ const About = () => {
 
             <div className="methodology-item">
               <div className="methodology-icon">
-                <img src="/images/about us/Methodology/Manage.webp" alt="Manage" />
+                <img src="/images/about us/Methodology/manage.webp" alt="Manage" />
               </div>
               <h2>Manage</h2>
               <p>We oversee your technology infrastructure, guaranteeing 24x7 seamless delivery by maintaining uptime, swift response times, and satisfactory issue resolution.</p>
@@ -145,7 +145,7 @@ const About = () => {
           <h2 className="section-title">Why Choose Us?</h2>
           <div className="team-grid">
             <div className="team-item">
-              <img src="/images/about us/why Symmetric.webp" alt="why symmetric" />
+              <img src="/images/about us/why symmetric.webp" alt="why symmetric" />
             </div>
             
           </div>
