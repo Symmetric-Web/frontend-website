@@ -30,14 +30,12 @@ const BuildingTechnologyProducts = () => {
       const response = await fetch('https://productsbackend-606484914740.asia-south1.run.app/get_products', {
         method: 'POST',
         headers: {
-          'Content-Type': 'application/json',
+          'Content-Type': 'application/json'
         },
         body: JSON.stringify({
           product_type: "Building Technology Products"
         })
       });
-      console.log("API Response status:", response.status);
-      console.log("API Response headers:", response.headers);
       
       const result = await response.json();
       console.log("API Response data:", result);

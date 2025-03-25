@@ -183,7 +183,7 @@ const AVAutomationSolutions = () => {
       category: "ENERGY",
       title: "Energy Conservation",
       description: "Rising energy costs are impacting profitability and sustainability, making it essential to adopt smarter power usage habits and choices for a greener future. Symmetric IT Services offers LEED-compliant solutions to help monitor, optimize, and reduce energy consumption.",
-      image: "./images/Solutions/AV and Automation Solution/Luxury Home/Energy Conservation.webp",
+      image: "/images/Solutions/AV and Automation Solution/Luxury Home/Energy Conservation.webp",
       details: [
         {
           title: "Key Features",
@@ -968,7 +968,7 @@ const AVAutomationSolutions = () => {
         }
       ]
     }
-  ]; // End of videoCollaboration array
+  ];
 
   const visualSolutions = [
     {

@@ -28,7 +28,7 @@ function AVAutomationProducts() {
       const response = await fetch('https://productsbackend-606484914740.asia-south1.run.app/get_products', {
         method: 'POST',
         headers: {
-          'Content-Type': 'application/json',
+          'Content-Type': 'application/json'
         },
         body: JSON.stringify({
           product_type: "Audio-Visual-Products"

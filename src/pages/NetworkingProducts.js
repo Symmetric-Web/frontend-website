@@ -30,14 +30,12 @@ function NetworkingProducts() {
       const response = await fetch('https://productsbackend-606484914740.asia-south1.run.app/get_products', {
         method: 'POST',
         headers: {
-          'Content-Type': 'application/json',
+          'Content-Type': 'application/json'
         },
         body: JSON.stringify({
           product_type: "Networking Products"
         })
       });
-      console.log("API Response status:", response.status);
-      console.log("API Response headers:", response.headers);
       
       const result = await response.json();
       console.log("API Response data:", result);
@@ -108,28 +106,28 @@ function NetworkingProducts() {
         <div className="grid-container">
           <div className="grid-item">
             <img 
-              src="/images/networking/Scada network center.webp" 
+              src="/images/Networking/Scada network center.webp" 
               alt="Network Infrastructure"
               className="grid-image"
             />
           </div>
           <div className="grid-item">
             <img 
-              src="/images/networking/servers.webp" 
+              src="/images/Networking/servers.webp" 
               alt="Server Room"
               className="grid-image"
             />
           </div>
           <div className="grid-item">
             <img 
-              src="/images/networking/fire solutions.webp" 
+              src="/images/Networking/fire solutions.webp" 
               alt="Network Cables"
               className="grid-image"
             />
           </div>
           <div className="grid-item">
             <img 
-              src="/images/networking/cctv.webp" 
+              src="/images/Networking/cctv.webp" 
               alt="Data Center"
               className="grid-image"
             />
@@ -264,7 +262,13 @@ function NetworkingProducts() {
                   >
                     {product.imageUrl && (
                       <div className="product-image">
-                        <img src={product.imageUrl} alt={product.name} />
+                        <img 
+                          src={product.imageUrl.startsWith('http') ? product.imageUrl : `/images/products/${product.imageUrl}`} 
+                          alt={product.name}
+                          loading="lazy"
+                          width="100%"
+                          height="100%"
+                        />
                       </div>
                     )}
                     <div className="product-content">
@@ -312,7 +316,13 @@ function NetworkingProducts() {
                   <h2>{selectedProduct.name}</h2>
                   {selectedProduct.imageUrl && (
                     <div className="modal-image">
-                      <img src={selectedProduct.imageUrl} alt={selectedProduct.name} />
+                      <img 
+                        src={selectedProduct.imageUrl.startsWith('http') ? selectedProduct.imageUrl : `/images/products/${selectedProduct.imageUrl}`} 
+                        alt={selectedProduct.name}
+                        loading="lazy"
+                        width="100%"
+                        height="100%"
+                      />
                     </div>
                   )}
                 </div>
