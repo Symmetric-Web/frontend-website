@@ -38,6 +38,7 @@ function App() {
             <Route path="/building-tech-solutions" element={<BuildingTechSolutions />} />
             <Route path="/av-automation-solutions" element={<AVAutomationSolutions />} />
             <Route path="/hiring" element={<Hiring />} />
+            // minor change
           </Routes>
         </main>
         <Footer />
