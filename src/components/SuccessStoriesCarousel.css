@@ -74,18 +74,19 @@
 
 .card-text {
   position: absolute;
-  bottom: 0;
+  bottom: 6rem;
   left: 0;
   right: 0;
-  padding: 2rem;
+  padding: 0 2rem;
   z-index: 3;
   color: white;
+  /* margin-bottom: 0px; */
 }
 
 .card-category {
   font-size: 1rem;
   font-weight: 500;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
@@ -94,7 +95,7 @@
   font-size: 1.75rem;
   font-weight: 600;
   line-height: 1.2;
-  margin-bottom: 1rem;
+  margin: 0;
 }
 
 .card-description {

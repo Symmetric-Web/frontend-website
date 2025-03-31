@@ -162,7 +162,7 @@ export const SuccessStoriesCarousel = () => {
                 <div className="card-text">
                   <p className="card-category">{story.category}</p>
                   <h3 className="card-title">{story.title}</h3>
-                  <p className="card-description">{story.description}</p>
+                  {/* <p className="card-description">{story.description}</p> */}
                 </div>
                 <img 
                   src={story.image} 
