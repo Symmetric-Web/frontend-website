@@ -83,11 +83,11 @@ const BlogList = () => {
     <div className="blog-page">
       <section className="blog-hero">
         <div className="container">
-          <div className="hero-content">
-            <div className="hero-text">
-              <div className="logo-small">Powering Tomorrow</div>
+          <div className="blog-hero-content">
+            <div className="blog-hero-text">
+              <div className="blog-hero-logo-small">Powering Tomorrow</div>
               <h1>Symmetric IT<br />Services</h1>
-              <p className="hero-description">
+              <p className="blog-hero-description">
                 Our commitment to innovative technology solutions is paving the way for a smarter, 
                 more connected future. Join us on a journey towards transforming the way businesses operate.
               </p>
