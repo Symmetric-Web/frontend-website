@@ -11,6 +11,7 @@ import AVAutomationProducts from './pages/AVAutomationProducts';
 import Contact from './pages/Contact';
 import CaseStudy from './pages/CaseStudy';
 import Blog from './pages/Blog';
+import BlogPostContent from './components/BlogPostContent';
 import NetworkingSolutions from './pages/solutions/NetworkingSolutions';
 import BuildingTechSolutions from './pages/solutions/BuildingTechSolutions';
 import AVAutomationSolutions from './pages/solutions/AVAutomationSolutions';
@@ -31,6 +32,7 @@ function App() {
             <Route path="/solutions" element={<Solutions />} />
             <Route path="/case-study" element={<CaseStudy />} />
             <Route path="/blog" element={<Blog />} />
+            <Route path="/blog/:blogId" element={<BlogPostContent />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/networking-solutions" element={<NetworkingSolutions />} />
             <Route path="/building-tech-solutions" element={<BuildingTechSolutions />} />

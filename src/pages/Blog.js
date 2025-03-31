@@ -1,7 +1,10 @@
 import React, { useState, useEffect, useCallback } from 'react';
+import { Link, Routes, Route } from 'react-router-dom';
+import BlogPostContent from '../components/BlogPostContent';
+import blogsData from '../data/blogs/blogs.json';
 import './Blog.css';
 
-const Blog = () => {
+const BlogList = () => {
   const [currentPage, setCurrentPage] = useState(0);
   const [isAnimating, setIsAnimating] = useState(false);
   
@@ -74,6 +77,8 @@ const Blog = () => {
     (currentPage + 1) * slidesPerPage
   );
 
+  const blogPosts = blogsData.blogs;
+
   return (
     <div className="blog-page">
       <section className="blog-hero">
@@ -125,8 +130,41 @@ const Blog = () => {
           </div>
         </div>
       </section>
-      {/* Rest of the blog content */}
+
+      <section className="blog-grid">
+        <div className="container">
+          <div className="blog-cards">
+            {blogPosts.map((post) => (
+              <Link to={`/blog/${post.id}`} key={post.id} className="blog-list-card" style={{ textDecoration: 'none', color: 'inherit' }}>
+                <div className="blog-list-card-image">
+                  <img src={post.image} alt={post.title} />
+                </div>
+                <div className="blog-list-card-content">
+                  <div className="blog-list-card-header">
+                    <span className="blog-list-category">{post.category}</span>
+                    <h3 className="blog-list-title">{post.title}</h3>
+                    <p className="blog-list-description">{post.description}</p>
+                  </div>
+                  <div className="blog-list-footer">
+                    <span className="blog-list-author">{post.author}</span>
+                    <button className="blog-list-read-more">Read More</button>
+                  </div>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
     </div>
+  );
+};
+
+const Blog = () => {
+  return (
+    <Routes>
+      <Route path="/" element={<BlogList />} />
+      <Route path="/:blogId" element={<BlogPostContent />} />
+    </Routes>
   );
 };
 
