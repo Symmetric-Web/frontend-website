@@ -166,7 +166,7 @@ function Home() {
                 <p>At Symmetric IT Services, we're committed to delivering cutting-edge technology solutions. As a pioneering force in the IT sector, we've been at the forefront of digital transformation. Our mission is simple yet profound: to create innovative solutions that empower businesses to thrive in the digital age.</p>
               </div>
               <div className="about-logo">
-                <img src="/images/logo/Symm Logo.png" alt="Symmetric IT Services Logo" />
+                <img src="/images/Logo/Symm Logo.png" alt="Symmetric IT Services Logo" />
               </div>
             </div>
           </div>
