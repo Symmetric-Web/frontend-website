@@ -148,7 +148,7 @@ function NetworkingProducts() {
             >
               <div className="categories-grid">
                 <div className="category-card" onClick={() => {
-                  setSelectedType('Fiber Optic Cable & Accessories');
+                  setSelectedType('Optical Fibre Cable (OFC) & Accessoreis');
                   document.querySelector('.products-section').scrollIntoView({ behavior: 'smooth' });
                 }}>
                   <h3>Fiber Optic Cable & Accessories</h3>
