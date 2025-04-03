@@ -156,7 +156,7 @@ function NetworkingProducts() {
                 </div>
               
                 <div className="category-card" onClick={() => {
-                  setSelectedType('Structured Cable & Accessories');
+                  setSelectedType('Structured cabling & accessories');
                   document.querySelector('.products-section').scrollIntoView({ behavior: 'smooth' });
                 }}>
                   <h3>Structured Cable & Accessories</h3>
@@ -172,7 +172,7 @@ function NetworkingProducts() {
                 </div>
               
                 <div className="category-card" onClick={() => {
-                  setSelectedType('Enterprise Switching');
+                  setSelectedType('Industrial Ethernet Switches');
                   document.querySelector('.products-section').scrollIntoView({ behavior: 'smooth' });
                 }}>
                   <h3>Enterprise Switching</h3>
@@ -180,7 +180,7 @@ function NetworkingProducts() {
                 </div>
               
                 <div className="category-card" onClick={() => {
-                  setSelectedType('Industrial Switches & Convertors');
+                  setSelectedType('Industrial Ethernet Switches');
                   document.querySelector('.products-section').scrollIntoView({ behavior: 'smooth' });
                 }}>
                   <h3>Industrial Switches & Convertors</h3>
@@ -188,7 +188,7 @@ function NetworkingProducts() {
                 </div>
               
                 <div className="category-card" onClick={() => {
-                  setSelectedType('Firewall');
+                  setSelectedType('Firewall products');
                   document.querySelector('.products-section').scrollIntoView({ behavior: 'smooth' });
                 }}>
                   <h3>Firewalls</h3>
