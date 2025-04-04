@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { Link, Routes, Route } from 'react-router-dom';
 import BlogPostContent from '../components/BlogPostContent';
-import blogsData from '../data/blogs/blogs.json';
+import { getAllBlogs } from '../services/blogService';
 import './Blog.css';
 
 const BlogList = () => {
@@ -77,7 +77,19 @@ const BlogList = () => {
     (currentPage + 1) * slidesPerPage
   );
 
-  const blogPosts = blogsData.blogs;
+  const [blogPosts, setBlogPosts] = useState([]);
+
+  useEffect(() => {
+    const fetchBlogs = async () => {
+      try {
+        const blogs = await getAllBlogs();
+        setBlogPosts(blogs);
+      } catch (error) {
+        console.error('Error fetching blogs:', error);
+      }
+    };
+    fetchBlogs();
+  }, []);
 
   return (
     <div className="blog-page">

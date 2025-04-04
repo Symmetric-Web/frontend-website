@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import blogsData from '../data/blogs/blogs.json';
+import { getBlogById } from '../services/blogService';
 import './BlogPost.css';
 
 const BlogPostContent = () => {
@@ -9,12 +9,16 @@ const BlogPostContent = () => {
   const [blog, setBlog] = useState(null);
 
   useEffect(() => {
-    const currentBlog = blogsData.blogs.find(b => b.id === blogId);
-    if (!currentBlog) {
-      navigate('/blog');
-      return;
-    }
-    setBlog(currentBlog);
+    const fetchBlog = async () => {
+      try {
+        const blogData = await getBlogById(blogId);
+        setBlog(blogData);
+      } catch (error) {
+        console.error('Error fetching blog:', error);
+        navigate('/blog');
+      }
+    };
+    fetchBlog();
   }, [blogId, navigate]);
 
   if (!blog) {
