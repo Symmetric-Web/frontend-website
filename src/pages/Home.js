@@ -270,14 +270,14 @@ function Home() {
                 <h3>{member.name}</h3>
                 <h4>{member.position}</h4>
                 <p>{member.description}</p>
-                {member.expandedDescription && (
+                {/* {member.expandedDescription && (
                   <button 
                     className="expand-btn"
                     onClick={() => setSelectedMember(member)}
                   >
                     Read More
                   </button>
-                )}
+                )} */}
               </div>
             ))}
           </div>
