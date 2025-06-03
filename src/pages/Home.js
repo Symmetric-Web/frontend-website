@@ -257,21 +257,24 @@ function Home() {
           <h2 className="section-title">Leadership Team</h2>
           <div className="team-grid">
             {teamMembers.map((member) => (
-              <div key={member.id} className="team-member cursor-pointer">
-                <div className="member-image" onClick={() => setSelectedMember(member)}>
+              <div 
+                key={member.id} 
+                className="team-member"
+                onClick={() => setSelectedMember(member)}
+                role="button"
+                tabIndex={0}
+                onKeyPress={(e) => {
+                  if (e.key === 'Enter' || e.key === ' ') {
+                    setSelectedMember(member);
+                  }
+                }}
+              >
+                <div className="member-image">
                   <img src={member.image} alt={member.name} />
                 </div>
                 <h3>{member.name}</h3>
                 <h4>{member.position}</h4>
                 <p>{member.description}</p>
-                {/* {member.expandedDescription && (
-                  <button 
-                    className="expand-btn"
-                    onClick={() => setSelectedMember(member)}
-                  >
-                    Read More
-                  </button>
-                )} */}
               </div>
             ))}
           </div>
@@ -280,7 +283,7 @@ function Home() {
 
       {/* Modal */}
       <AnimatePresence>
-        {selectedMember && selectedMember.expandedDescription && (
+        {selectedMember && (
           <motion.div 
             className="leader-modal-overlay"
             initial={{ opacity: 0 }}
@@ -298,10 +301,11 @@ function Home() {
               <button 
                 className="close-btn"
                 onClick={() => setSelectedMember(null)}
+                aria-label="Close modal"
               >
                 ×
               </button>
-              <div className="leader-modal-content cursor-pointer">
+              <div className="leader-modal-content">
                 <div className="leader-image">
                   <img src={selectedMember.image} alt={selectedMember.name} />
                 </div>
