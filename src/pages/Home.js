@@ -1,5 +1,6 @@
 import React, { useState, lazy, Suspense } from 'react';
 import { Link } from 'react-router-dom';
+import { AnimatePresence, motion } from 'framer-motion';
 import './Home.css';
 
 // Lazy load components
@@ -7,13 +8,6 @@ const SuccessStoriesCarousel = lazy(() => import('../components/SuccessStoriesCa
   default: module.SuccessStoriesCarousel
 })));
 const Testimonials = lazy(() => import('../components/Testimonials'));
-const AnimatePresence = lazy(() => import('framer-motion').then(module => ({
-  default: module.AnimatePresence
-})));
-const motion = lazy(() => import('framer-motion').then(module => ({
-  default: module.motion
-})));
-
 
 // Team members data
 const teamMembers = [
@@ -263,7 +257,7 @@ function Home() {
           <h2 className="section-title">Leadership Team</h2>
           <div className="team-grid">
             {teamMembers.map((member) => (
-              <div key={member.id} className="team-member">
+              <div key={member.id} className="team-member cursor-pointer">
                 <div className="member-image" onClick={() => setSelectedMember(member)}>
                   <img src={member.image} alt={member.name} />
                 </div>
@@ -307,7 +301,7 @@ function Home() {
               >
                 ×
               </button>
-              <div className="leader-modal-content">
+              <div className="leader-modal-content cursor-pointer">
                 <div className="leader-image">
                   <img src={selectedMember.image} alt={selectedMember.name} />
                 </div>
