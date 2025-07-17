@@ -27,7 +27,7 @@ function NetworkingProducts() {
     setError(null);
     try {
       console.log("Making API call to api");
-      const response = await fetch('https://productsbackend-606484914740.asia-south1.run.app/get_products', {
+      const response = await fetch('https://symmetric-products-backend.vercel.app/get_products', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
